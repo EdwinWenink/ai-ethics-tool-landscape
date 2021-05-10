@@ -7,14 +7,17 @@ enableGitInfo = true
 
 [menu]
     [[menu.main]]
-        name = "Tools"
-        url = "/tools/"
-    [[menu.main]]
         name = "Values"
         url = "/values/"
+        weight = 1
     [[menu.main]]
         name = "Design phase"
         url = "/phases/"
+        weight = 2
+    [[menu.main]]
+        name = "Tools"
+        url = "/tools/"
+        weight = 3
 
 [taxonomies]
     value = "values"
