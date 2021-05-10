@@ -17,4 +17,4 @@ enableGitInfo = true
 [taxonomies]
     value = "values"
     categories = "categories"
-    phase = "design phases"
+    phase = "phases"

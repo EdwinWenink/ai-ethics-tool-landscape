@@ -2,7 +2,7 @@
 title: LIME
 values: ['explainability']
 categories: ['model-agnostic']
-design phases: ['data exploration']
+phases: ['post-hoc']
 ---
 
 This is a test file
