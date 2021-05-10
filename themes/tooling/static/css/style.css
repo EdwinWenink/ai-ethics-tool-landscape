@@ -6,10 +6,27 @@
     --foreground-color: black;
     --link-color: black;
     --link-visited-color: black;
+    --font-size: 16px;
+    --font-color: #444;
 }
 
 html {overflow-y: scroll}
-body{max-width:800px;margin:40px auto;padding:0 10px;font:14px/1.5 monospace;color:#444}h1,h2,h3{line-height:1.2}@media (prefers-color-scheme: dark){body{color:var(--foreground-color);background:var(--background-color)}a:link{color:var(--link-color)}a:visited{color: var(--link-visited-color)}}
+body{
+max-width:800px;
+margin:40px auto;
+padding:0 10px;
+font:var(--font-size)/1.5 monospace;
+color:var(--font-color)}
+h1,h2,h3{
+line-height:1.2}
+h1.title{
+    text-decoration: underline 5px solid red;
+}
+@media (prefers-color-scheme: dark)
+{body{color:var(--foreground-color);
+background:var(--background-color)}
+a:link{color:var(--link-color)}
+a:visited{color: var(--link-visited-color)}}
 /*header{border-bottom:1px dashed}*/
 p > code{color: #FFFFFF; background:#000000; padding:2px}
 pre{color: #FFFFFF; background:#000000; padding:12px; overflow-x: auto}
