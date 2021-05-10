@@ -4,18 +4,49 @@
 			<h1>{{ .Title }}</h1>
             <!--<time>{{ .Date.Format "02.01.2006 15:04" }}</time>-->
 			<div>
+
+            <ul>
+			{{ with .Params.values }}
+            <li id="values"> Values: { {{ range . }} <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> } </li> {{ end }} 
+            {{ end }} 
+
+			{{ with .Params.categories }}
+            <li id="categories"> Categories: { {{ range . }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> } </li> {{ end }} 
+            {{ end }} 
+
+			{{ with .Params.phases }}
+            <li id="design-phase"> Design phase: { {{ range . }} <a href="{{ "/phases/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> } </li> {{ end }} 
+            {{ end }} 
+
+			{{ with .Params.repo }}
+            <li id="repository"> Repository: <a href="{{ . }}" target="_blank">{{ . }}</a></li>
+            {{ end }} 
+
+			{{ with .Params.licence }}
+            <li id="licence"> Licence: {{ . }}</li>
+            {{ end }} 
+
+			{{ with .Params.languages }}
+            <li id="languages"> Languages: { {{ range . }} {{ . }} {{ end }} }</li>
+            {{ end }} 
+
+			{{ with .Params.references }}
+            <li>References: 
+            {{ range . }}
+                <ul> 
+                    <li id="references"> {{ . }} </li>
+                </ul>
+            {{ end }} 
+            </li>
+            {{ end }} 
+
+            </ul>
+			</div>
+
+			<div>
 				{{ .Content }}
 			</div>
-			{{ with .Params.categories }}
-			<div>
-				<ul id="categories">
-					{{ range . }}
-					<li><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</div>
-			{{ end }}
 		</article>
 	</main>
-{{ partial "sidebar.html" . }}
+    <!--{{ partial "sidebar.html" . }}-->
 {{ end }}
