@@ -12,7 +12,9 @@ enableGitInfo = true
     [[menu.main]]
         name = "Values"
         url = "/values/"
-
+    [[menu.main]]
+        name = "Design phase"
+        url = "/phases/"
 
 [taxonomies]
     value = "values"
