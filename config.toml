@@ -11,7 +11,7 @@ enableGitInfo = true
         url = "/values/"
         weight = 1
     [[menu.main]]
-        name = "Design phase"
+        name = "Design phases"
         url = "/phases/"
         weight = 2
     [[menu.main]]
