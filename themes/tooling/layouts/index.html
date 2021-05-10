@@ -1,0 +1,80 @@
+{{ define "main" }}
+	<main>
+    
+    <h1>AI Ethics Tool Landscape</h1>
+
+    <h2>Values</h2>
+
+    <div class="values">
+    <ul>
+    {{ range .Site.Taxonomies.values }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+    </ul>
+    </div>
+
+    <h2>Categories</h2>
+
+    <div class="categories">
+    <ul>
+    {{ range .Site.Taxonomies.categories }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+    </ul>
+    </div>
+
+    <h2>Tools</h2>
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+        <ul>
+		{{ range $paginator.Pages }}
+            <li>
+                <p><a href="test">{{ .Title}}</a> : 
+                { value: [
+                {{ range .Params.values }} <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
+                ]
+                }
+                </p>
+            </li>
+		{{ end }}
+        </ul>
+        <!--{{ partial "pagination.html" . }}-->
+    <!--{{ partial "sidebar.html" . }}-->
+
+    <h2> Design phase</h2>
+
+    <div class="design-phases">
+    <ul>
+    {{ range .Site.Taxonomies.phases }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+    {{ end }}
+    </ul>
+    </div>
+
+    <h2>Taxonomy</h2>
+
+    <section>
+        <ul id="all-taxonomies">
+            {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
+                {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
+                    <li><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
+                        <ul>
+                            {{ range $key, $value := $taxonomy }}
+                            <li><a href="{{$taxonomy_term}}/{{$key}}">{{ $key }}</a></li>
+                                <ul>
+                                    {{ range $value.Pages }}
+                                        <li hugo-nav="{{ .RelPermalink}}">
+                                            <a href="{{ .Permalink}}">{{ .LinkTitle }}</a>
+                                        </li>
+                                    {{ end }}
+                                </ul>
+                            {{ end }}
+                        </ul>
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </section>
+
+	</main>
+    {{ end }}
+
