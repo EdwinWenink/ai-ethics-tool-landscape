@@ -1,0 +1,20 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Ethical AI Tool Landscape"
+copyright = "Edwin Wenink"
+theme = "tooling"
+enableGitInfo = true
+
+[menu]
+    [[menu.main]]
+        name = "Tools"
+        url = "/tools/"
+    [[menu.main]]
+        name = "Values"
+        url = "/values/"
+
+
+[taxonomies]
+    value = "values"
+    categories = "categories"
+    phase = "design phases"
