@@ -5,8 +5,10 @@ categories: ['model-agnostic']
 phases: ['data exploration']
 licence: 'LICENSE'
 repo: https://example.org
-languages: ['python']
+languages: ['Python']
 references: 
-- 'Your paper reference goes here'
+- 
+    name: 'Title'
+    url: 'https://www.example.org'
 ---
 
