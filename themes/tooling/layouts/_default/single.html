@@ -3,19 +3,20 @@
 		<article>
 			<h1 class="title">{{ .Title }}</h1>
             <!--<time>{{ .Date.Format "02.01.2006 15:04" }}</time>-->
+
 			<div>
 
             <ul>
 			{{ with .Params.values }}
-            <li id="values"> Values: { {{ range . }} <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> } </li> {{ end }} 
+            <li id="values"> Values: { {{ range . }} <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} } </li> 
             {{ end }} 
 
 			{{ with .Params.categories }}
-            <li id="categories"> Categories: { {{ range . }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> } </li> {{ end }} 
+            <li id="categories"> Categories: { {{ range . }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} } </li>
             {{ end }} 
 
 			{{ with .Params.phases }}
-            <li id="design-phase"> Design phase: { {{ range . }} <a href="{{ "/phases/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> } </li> {{ end }} 
+            <li id="design-phase"> Design phase: { {{ range . }} <a href="{{ "/phases/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
             {{ end }} 
 
 			{{ with .Params.repo }}
@@ -31,10 +32,10 @@
             {{ end }} 
 
 			{{ with .Params.references }}
-            <li>References: 
+            <li id="references">References: 
             {{ range . }}
                 <ul> 
-                    <li id="references"> {{ . }} </li>
+                    <li> {{ . }} </li>
                 </ul>
             {{ end }} 
             </li>
@@ -42,6 +43,8 @@
 
             </ul>
 			</div>
+
+            <hr>
 
 			<div>
 				{{ .Content }}
