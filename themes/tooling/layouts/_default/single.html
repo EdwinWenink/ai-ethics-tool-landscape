@@ -33,11 +33,19 @@
 
 			{{ with .Params.references }}
             <li id="references">References: 
-            {{ range . }}
-                <ul> 
-                    <li> {{ . }} </li>
-                </ul>
-            {{ end }} 
+                {{ range . }}
+                <!-- Either pass a single long string as a reference, or a map with keys "name" and "url" -->
+                    {{ if reflect.IsMap . }}
+                    <ul> 
+                        <li><a href="{{ index . "url" }}">{{ index . "name"}}</a></li>
+                    </ul>
+                    {{ else }}
+                    <ul> 
+                        <li> {{ . }} </li>
+                    </ul>
+                    {{ end }}
+                {{ end }} 
+
             </li>
             {{ end }} 
 

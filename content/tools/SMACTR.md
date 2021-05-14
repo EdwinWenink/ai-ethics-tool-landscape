@@ -4,7 +4,9 @@ values: ['accountability']
 categories: ['model-agnostic']
 phases: ['preprocessing', 'model training',  'post-hoc']
 references: 
-- 'Raji et al. - Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing'
+- 
+    name: 'Raji et al. - Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing'
+    url: 'https://arxiv.org/abs/2001.00973'
 ---
 
 Paper abstract:
