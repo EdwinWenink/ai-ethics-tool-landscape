@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 	<main>
     
     <h1 class="title">AI Ethics Tool Landscape</h1>
@@ -8,7 +9,17 @@
     <div class="values">
     <ul>
     {{ range .Site.Taxonomies.values }}
-            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+    {{ end }}
+    </ul>
+    </div>
+
+    <h2> Design phase</h2>
+
+    <div class="design-phases">
+    <ul>
+    {{ range .Site.Taxonomies.phases }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
     {{ end }}
     </ul>
     </div>
@@ -18,7 +29,7 @@
     <div class="categories">
     <ul>
     {{ range .Site.Taxonomies.categories }}
-            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
     {{ end }}
     </ul>
     </div>
@@ -39,16 +50,6 @@
         </ul>
         <!--{{ partial "pagination.html" . }}-->
     <!--{{ partial "sidebar.html" . }}-->
-
-    <h2> Design phase</h2>
-
-    <div class="design-phases">
-    <ul>
-    {{ range .Site.Taxonomies.phases }}
-            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-    {{ end }}
-    </ul>
-    </div>
 
     <h2>Taxonomy</h2>
 
