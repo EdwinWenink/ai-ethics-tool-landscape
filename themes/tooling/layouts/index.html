@@ -39,7 +39,7 @@
         <ul>
 		{{ range $paginator.Pages }}
             <li>
-                <p><a href="test">{{ .Title}}</a> : 
+                <p><a href="{{.Page.Permalink }}">{{ .Title}}</a> : 
                 { value: [
                 {{ range .Params.values }} <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
                 ]
