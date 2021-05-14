@@ -1,5 +1,5 @@
 ---
-title: SMACTR
+title: 'SMACTR: End-to-End Framework for Internal Algorithmic Auditing'
 values: ['accountability']
 categories: ['model-agnostic']
 phases: ['preprocessing', 'model training',  'post-hoc']
