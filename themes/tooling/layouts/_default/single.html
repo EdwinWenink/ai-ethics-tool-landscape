@@ -6,6 +6,13 @@
 
 			<div>
 
+            <!-- 
+                I tried looping over the Params in order to not hardcode params 
+                but that also includes various default params such as .lastmod
+                Just include all possible params here. If you don't specify them,
+                they're not shown anyways, so no damage done.
+            -->
+
             <ul>
 			{{ with .Params.values }}
             <li id="values"> Values: { {{ range . }} <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} } </li> 
