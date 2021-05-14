@@ -5,7 +5,7 @@ categories: ['model-agnostic']
 phases: ['post-hoc']
 licence: 'BSD 2-Clause "Simplified"'
 repo: https://github.com/marcotcr/lime
-languages: ['python']
+languages: ['Python']
 references: 
 - 'Ribeiro et al. - "Why Should I Trust You?": Explaining the Predictions of Any Classifier https://arxiv.org/abs/1602.04938'
 ---
