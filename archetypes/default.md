@@ -10,5 +10,8 @@ references:
 - 
     name: 'Title'
     url: 'https://www.example.org'
+- 
+    name: 'Title 2'
+    url: 'https://www.example.org'
 ---
 
