@@ -14,11 +14,11 @@
     </ul>
     </div>
 
-    <h2> Design phase</h2>
+    <h2>Stages</h2>
 
-    <div class="design-phases">
+    <div class="stages">
     <ul>
-    {{ range .Site.Taxonomies.phases }}
+    {{ range .Site.Taxonomies.stages }}
             <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
     {{ end }}
     </ul>

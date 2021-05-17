@@ -13,7 +13,7 @@ In order to contribute a tool, all you need to do is fork this repository, add a
 An archetype for the [correct format](/archetypes/_default.md) is provided under `/archetypes`.
 If you have `hugo` installed, you can use this archetype to easily add a tool to the content section with `hugo new tools/newtool.md`.
 
-It is allowed that a tool addresses multiple values, categories, and design phases.
+It is allowed that a tool addresses multiple values, categories, and stages of AI development.
 It is also possible that a tool is available in multiple languages.
 Therefore these field values are provided as an array.
 

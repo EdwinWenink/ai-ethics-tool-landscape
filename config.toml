@@ -11,8 +11,8 @@ enableGitInfo = true
         url = "/values/"
         weight = 1
     [[menu.main]]
-        name = "Design phases"
-        url = "/phases/"
+        name = "Stages"
+        url = "/stages/"
         weight = 2
     [[menu.main]]
         name = "Tools"
@@ -22,6 +22,6 @@ enableGitInfo = true
 [taxonomies]
     value = "values"
     categories = "categories"
-    phase = "phases"
+    stage = "stages"
     language = "languages"
     model = "models"

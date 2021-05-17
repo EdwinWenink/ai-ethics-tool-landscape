@@ -1,8 +1,8 @@
 ---
 title: LIME
 values: ['explainability']
-categories: ['model-agnostic']
-phases: ['post-hoc']
+categories: ['model-agnostic', 'local surrogate']
+stages: ['post-hoc']
 licence: 'BSD 2-Clause "Simplified"'
 repo: https://github.com/marcotcr/lime
 languages: ['Python']

@@ -2,7 +2,7 @@
 title: 'ART: Adversial Robustness 360 Toolbox'
 values: ['safety']
 categories: ['model-agnostic']
-phases: ['model training']
+stages: ['TODO', 'learning']
 licence: 'MIT'
 repo: https://github.com/Trusted-AI/adversarial-robustness-toolbox 
 languages: ['Python']

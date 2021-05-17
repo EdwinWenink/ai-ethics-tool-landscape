@@ -2,7 +2,7 @@
 title: 'SMACTR: End-to-End Framework for Internal Algorithmic Auditing'
 values: ['accountability']
 categories: ['model-agnostic']
-phases: ['preprocessing', 'model training',  'post-hoc']
+stages: ['design phase', 'preprocessing', 'learning','evaluation', 'prediction', 'post-hoc']
 references: 
 - 
     name: 'Raji et al. - Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing'

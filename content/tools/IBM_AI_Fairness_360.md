@@ -2,7 +2,7 @@
 title: IBM AI Fairness 360
 values: ['fairness']
 categories: ['model-agnostic']
-phases: ['preprocessing', 'post-hoc']
+stages: ['preprocessing', 'post-hoc']
 licence: 'Apache license'
 repo: https://github.com/Trusted-AI/AIF360
 languages: ['Python', 'R']
@@ -12,7 +12,7 @@ references:
     url: 'https://arxiv.org/abs/1810.01943'
 ---
 
-The IBM AI Fairness 360 Toolkit contains several bias mitigation algorithms that are applicable to various phases of a machine learning pipeline.
+The IBM AI Fairness 360 Toolkit contains several bias mitigation algorithms that are applicable to various stages of a machine learning pipeline.
 Different algorithms may also implement different notions of [fairness](/values/fairness), for example on the level of individuals or on the level of groups.
 Moreover, the choice for a particular algorithm from the toolkit also depends on assumptions on the equality of people.
 The toolkit provides excellent [guidance on choosing metrics and mitigation](http://aif360.mybluemix.net/resources#guidance) given a particular goal and application.
