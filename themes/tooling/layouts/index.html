@@ -38,14 +38,7 @@
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
         <ul>
 		{{ range $paginator.Pages }}
-            <li>
-                <p><a href="{{.Page.Permalink }}">{{ .Title}}</a> : 
-                { value: [
-                {{ range .Params.values }} <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}
-                ]
-                }
-                </p>
-            </li>
+            <li><a href="{{.Page.Permalink }}">{{ .Title}}</a></li>
 		{{ end }}
         </ul>
         <!--{{ partial "pagination.html" . }}-->
