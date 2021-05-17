@@ -6,7 +6,7 @@ stages: ['learning', 'post-hoc']
 licence: 'MIT'
 repo: https://github.com/interpretml/interpret-text
 languages: ['Python']
-models: ['BERT', 'RNN']
+models: ['sklearn', 'BERT', 'RNN']
 ---
 
 Interpret-Text is an extension of {{< tool "InterpretML" >}}, specifically for several text models.

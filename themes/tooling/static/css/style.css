@@ -8,6 +8,7 @@
     --link-visited-color: black;
     --font-size: 16px;
     --font-color: #444;
+    --header-higlight: red;
 }
 
 html {overflow-y: scroll}
@@ -22,6 +23,12 @@ line-height:1.2}
 h1.title{
     text-decoration: underline 5px solid red;
 }
+/* Markdown-like headers */
+h2::before { color: var(--header-highlight); content: '## '; }
+h3::before { color: var(--header-highlight); content: '### '; }
+h4::before { color: var(--header-highlight); content: '#### '; }
+h5::before { color: var(--header-highlight); content: '##### '; }
+h6::before { color: var(--header-highlight); content: '###### '; }
 @media (prefers-color-scheme: dark)
 {body{color:var(--foreground-color);
 background:var(--background-color)}
@@ -37,4 +44,9 @@ figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
 figure {margin: auto}
 ul {list-style: square;}
 ul li ul {list-style: '└── ';}
-hr { border-top: 1px dashed }
+hr { border-top: 1px dashed red }
+blockquote {
+	border-left: 3px solid red;
+	margin: 0.7em 10px;
+	padding: 0.7em 20px;
+}
