@@ -17,6 +17,10 @@ It is allowed that a tool addresses multiple values, categories, and stages of A
 It is also possible that a tool is available in multiple languages.
 Therefore these field values are provided as an array.
 
+The fields are used to automagically create taxonomies, so there's nothing more to it!
+
+### Multiple references
+
 The format for listing (paper) references is slightly more complex.
 The setup supports multiple references per tool.
 
@@ -41,4 +45,7 @@ references:
     url: 'https://www.example.org'
 ```
 
-The fields are used to automagically create taxonomies, so there's nothing more to it!
+### Cross-references
+
+A wiki-like syntax is supported to cross-link to other tools, categories, values etc.
+In the markdown file for a tool, you can for example link to another tool with `{{< tool "Interpret-Text" >}}` or to another value with `{{< value "explainability" >}}`.
