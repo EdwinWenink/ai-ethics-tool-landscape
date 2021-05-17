@@ -52,8 +52,11 @@
                     </ul>
                     {{ end }}
                 {{ end }} 
-
             </li>
+            {{ end }} 
+
+			{{ with .Params.models }}
+            <li id="model"> Models: { {{ range . }} <a href="{{ "/models/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
             {{ end }} 
 
             </ul>

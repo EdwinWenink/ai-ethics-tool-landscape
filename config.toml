@@ -24,3 +24,4 @@ enableGitInfo = true
     categories = "categories"
     phase = "phases"
     language = "languages"
+    model = "models"
