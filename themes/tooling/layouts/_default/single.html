@@ -35,7 +35,7 @@
             {{ end }} 
 
 			{{ with .Params.languages }}
-            <li id="languages"> Languages: { {{ range . }} {{ . }} {{ end }} }</li>
+            <li id="languages"> Languages: { {{ range . }}<a href="{{ "/languages/" | relLangURL }}{{ . | urlize }}">{{ .}}</a> {{ end }} }</li>
             {{ end }} 
 
 			{{ with .Params.references }}
