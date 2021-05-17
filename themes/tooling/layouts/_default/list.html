@@ -7,10 +7,15 @@
 		</div>
 		{{ end }}
 
+        {{ range .Pages }}
+            {{ .Render "summary"}}
+        {{ end }}
+        <!--
 		{{ range .Paginator.Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
 		{{ partial "pagination.html" . }}
+        -->
 	</main>
     <!--{{ partial "sidebar.html" . }}-->
 {{ end }}

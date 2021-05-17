@@ -15,14 +15,22 @@
     </div>
 
     <h2>Stages</h2>
-
-    <div class="stages">
-    <ul>
-    {{ range .Site.Taxonomies.stages }}
-            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
+    <!-- 
+        This case was more complex because I wanted to sort on taxonomy term weights
+        This is possible on Pages but taxonomies have WeightedPages
+        Regular Pages don't have the .Count property, so I had to manually retrieve 
+        this from the taxonomy
+    -->
+    <ol>
+    {{ $taxonomy_name := "stages" }}
+    {{ $tax := .Site.Taxonomies.stages }}
+    {{ with (.Site.GetPage (printf "/%s" $taxonomy_name)) }}					
+        {{ range .Pages.ByWeight }}
+            {{ $name := .Title }}
+            <li><a href="{{ .RelPermalink }}">{{ $name }} ({{ (index $tax $name).Count }})</a></li>
+        {{ end }}	
     {{ end }}
-    </ul>
-    </div>
+    </ol>
 
     <h2>Categories</h2>
 
