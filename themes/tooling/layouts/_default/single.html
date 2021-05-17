@@ -14,50 +14,68 @@
             -->
 
             <ul>
-			{{ with .Params.values }}
-            <li id="values"> Values: { {{ range . }} <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{ end }} } </li> 
-            {{ end }} 
+                {{ with .Params.values }}
+                <li id="values"> Values: { 
+                    {{ range . }}
+                        <a href="{{ "/values/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }} } 
+                {{ end }} 
 
-			{{ with .Params.categories }}
-            <li id="categories"> Categories: { {{ range . }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} } </li>
-            {{ end }} 
-
-			{{ with .Params.phases }}
-            <li id="design-phase"> Design phase: { {{ range . }} <a href="{{ "/phases/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
-            {{ end }} 
-
-			{{ with .Params.repo }}
-            <li id="repository"> Repository: <a href="{{ . }}" target="_blank">{{ . }}</a></li>
-            {{ end }} 
-
-			{{ with .Params.licence }}
-            <li id="licence"> Licence: {{ . }}</li>
-            {{ end }} 
-
-			{{ with .Params.languages }}
-            <li id="languages"> Languages: { {{ range . }}<a href="{{ "/languages/" | relLangURL }}{{ . | urlize }}">{{ .}}</a> {{ end }} }</li>
-            {{ end }} 
-
-			{{ with .Params.references }}
-            <li id="references">References: 
-                {{ range . }}
-                <!-- Either pass a single long string as a reference, or a map with keys "name" and "url" -->
-                    {{ if reflect.IsMap . }}
-                    <ul> 
-                        <li><a href="{{ index . "url" }}">{{ index . "name"}}</a></li>
-                    </ul>
-                    {{ else }}
-                    <ul> 
-                        <li> {{ . }} </li>
+                    <!-- You can optionally provide extra information specific to the value 'explainability' -->
+                    {{ with .Params.explanation }}
+                    <ul>
+                        <li>Explanation type: { {{ range . }} {{.}} {{end}} }</li>
                     </ul>
                     {{ end }}
-                {{ end }} 
-            </li>
-            {{ end }} 
 
-			{{ with .Params.models }}
-            <li id="model"> Models: { {{ range . }} <a href="{{ "/models/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
-            {{ end }} 
+                    <!-- You can optionally provide extra information specific to the value 'explainability' -->
+                    {{ with .Params.fairness }}
+                    <ul>
+                        <li>Fairness type: { {{ range . }} {{.}} {{end}} }</li>
+                    </ul>
+                    {{ end }}
+                </li> 
+
+                {{ with .Params.categories }}
+                <li id="categories"> Categories: { {{ range . }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} } </li>
+                {{ end }} 
+
+                {{ with .Params.phases }}
+                <li id="design-phase"> Design phase: { {{ range . }} <a href="{{ "/phases/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
+                {{ end }} 
+
+                {{ with .Params.repo }}
+                <li id="repository"> Repository: <a href="{{ . }}" target="_blank">{{ . }}</a></li>
+                {{ end }} 
+
+                {{ with .Params.licence }}
+                <li id="licence"> Licence: {{ . }}</li>
+                {{ end }} 
+
+                {{ with .Params.languages }}
+                <li id="languages"> Languages: { {{ range . }}<a href="{{ "/languages/" | relLangURL }}{{ . | urlize }}">{{ .}}</a> {{ end }} }</li>
+                {{ end }} 
+
+                {{ with .Params.references }}
+                <li id="references">References: 
+                    {{ range . }}
+                    <!-- Either pass a single long string as a reference, or a map with keys "name" and "url" -->
+                        {{ if reflect.IsMap . }}
+                        <ul> 
+                            <li><a href="{{ index . "url" }}">{{ index . "name"}}</a></li>
+                        </ul>
+                        {{ else }}
+                        <ul> 
+                            <li> {{ . }} </li>
+                        </ul>
+                        {{ end }}
+                    {{ end }} 
+                </li>
+                {{ end }} 
+
+                {{ with .Params.models }}
+                <li id="model"> Models: { {{ range . }} <a href="{{ "/models/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
+                {{ end }} 
 
             </ul>
 			</div>
