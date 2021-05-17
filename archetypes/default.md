@@ -1,7 +1,10 @@
 ---
 title: '{{ replace .Name "-" " " | title }}'
 values: ['explainability']
+explanations: []
+fairness: []
 categories: ['model-agnostic']
+models: []
 phases: ['data exploration']
 licence: 'LICENSE'
 repo: https://example.org
@@ -14,4 +17,5 @@ references:
     name: 'Title 2'
     url: 'https://www.example.org'
 ---
+
 

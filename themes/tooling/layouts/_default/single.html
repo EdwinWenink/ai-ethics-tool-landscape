@@ -24,7 +24,7 @@
                     <!-- You can optionally provide extra information specific to the value 'explainability' -->
                     {{ with .Params.explanation }}
                     <ul>
-                        <li>Explanation type: { {{ range . }} {{.}} {{end}} }</li>
+                        <li>Explanation type: { {{ range . }}<a href="{{ "/explanations/" | relLangURL }}{{ . | urlize }}">{{.}}</a> {{end}} }</li>
                     </ul>
                     {{ end }}
 

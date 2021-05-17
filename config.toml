@@ -29,3 +29,5 @@ enableGitInfo = true
     stage = "stages"
     language = "languages"
     model = "models"
+    explanation = "explanations"
+    fairness = "fairness"

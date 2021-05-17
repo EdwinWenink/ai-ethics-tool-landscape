@@ -7,7 +7,7 @@ licence: 'MIT'
 repo: https://github.com/interpretml/DiCE
 languages: ['Python']
 models: []
-explanation: ['counterfactual', 'example']
+explanations: ['example-based']
 references: 
 - 
     name: 'Mothilal et al. - Explaining Machine Learning Classifiers through Diverse Counterfactual Explanations'
