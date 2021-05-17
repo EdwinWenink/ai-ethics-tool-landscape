@@ -8,7 +8,7 @@
     --link-visited-color: black;
     --font-size: 16px;
     --font-color: #444;
-    --header-higlight: red;
+    --header-highlight: red;
 }
 
 html {overflow-y: scroll}
@@ -44,9 +44,9 @@ figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
 figure {margin: auto}
 ul {list-style: square;}
 ul li ul {list-style: '└── ';}
-hr { border-top: 1px dashed red }
+hr { border-top: 2px solid red }
 blockquote {
-	border-left: 3px solid red;
+	border-left: 2px solid red;
 	margin: 0.7em 10px;
 	padding: 0.7em 20px;
 }
