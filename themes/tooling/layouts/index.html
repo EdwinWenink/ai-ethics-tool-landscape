@@ -4,7 +4,7 @@
     
     <h1 class="title">AI Ethics Tool Landscape</h1>
 
-    <h2>Values</h2>
+    <h2><a href="/values/">Values</a></h2>
 
     <div class="values">
     <ul>
@@ -14,13 +14,14 @@
     </ul>
     </div>
 
-    <h2>Stages</h2>
+    <h2><a href="/stages/">Stages</a></h2>
     <!-- 
         This case was more complex because I wanted to sort on taxonomy term weights
         This is possible on Pages but taxonomies have WeightedPages
         Regular Pages don't have the .Count property, so I had to manually retrieve 
         this from the taxonomy
     -->
+    <div class="stages">
     <ol>
     {{ $taxonomy_name := "stages" }}
     {{ $tax := .Site.Taxonomies.stages }}
@@ -31,8 +32,9 @@
         {{ end }}	
     {{ end }}
     </ol>
+    </div>
 
-    <h2>Categories</h2>
+    <h2><a href="/categories/">Categories</a></h2>
 
     <div class="categories">
     <ul>
@@ -42,7 +44,8 @@
     </ul>
     </div>
 
-    <h2>Tools</h2>
+    <h2><a href="/tools/">Tools</a></h2>
+    <div class="tools">
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
         <ul>
 		{{ range $paginator.Pages }}
@@ -51,6 +54,7 @@
         </ul>
         <!--{{ partial "pagination.html" . }}-->
     <!--{{ partial "sidebar.html" . }}-->
+    </div>
 
     <h2>Taxonomy</h2>
 
