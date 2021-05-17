@@ -7,7 +7,9 @@ licence: 'MIT'
 repo: https://github.com/Trusted-AI/adversarial-robustness-toolbox 
 languages: ['Python']
 references: 
-- 'Nicolae et al. - Adversarial Robustness Toolbox v1.0.0, https://arxiv.org/abs/1807.01069'
+-
+    name: 'Nicolae et al. - Adversarial Robustness Toolbox v1.0.0'
+    url: 'https://arxiv.org/abs/1807.01069'
 ---
 
 <!-- TODO check whether it's really model agnostic -->

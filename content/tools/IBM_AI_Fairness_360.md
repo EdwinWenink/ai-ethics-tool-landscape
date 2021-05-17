@@ -7,7 +7,9 @@ licence: 'Apache license'
 repo: https://github.com/Trusted-AI/AIF360
 languages: ['Python', 'R']
 references: 
-- 'Bellamny et al. - AI Fairness 360: An Extensible Toolkit for Detecting, Understanding, and Mitigating Unwanted Algorithmic Bias, https://arxiv.org/abs/1810.01943'
+- 
+    name: 'Bellamny et al. - AI Fairness 360: An Extensible Toolkit for Detecting, Understanding, and Mitigating Unwanted Algorithmic Bias'
+    url: 'https://arxiv.org/abs/1810.01943'
 ---
 
 The IBM AI Fairness 360 Toolkit contains several bias mitigation algorithms that are applicable to various phases of a machine learning pipeline.
