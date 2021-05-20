@@ -1,11 +1,14 @@
 ---
 title: 'Interpret-Text'
 values: ['explainability']
+explanations: ['saliency', 'example-based']
 categories: ['model-specific']
 stages: ['learning', 'post-hoc']
 licence: 'MIT'
 repo: https://github.com/interpretml/interpret-text
 languages: ['Python']
+data: ['text']
+tasks: ['classification']
 models: ['sklearn', 'BERT', 'RNN']
 ---
 

@@ -22,7 +22,7 @@
                 {{ end }} 
 
                     <!-- You can optionally provide extra information specific to the value 'explainability' -->
-                    {{ with .Params.explanation }}
+                    {{ with .Params.explanations }}
                     <ul>
                         <li>Explanation type: { {{ range . }}<a href="{{ "/explanations/" | relLangURL }}{{ . | urlize }}">{{.}}</a> {{end}} }</li>
                     </ul>
@@ -46,6 +46,14 @@
 
                 {{ with .Params.repo }}
                 <li id="repository"> Repository: <a href="{{ . }}" target="_blank">{{ . }}</a></li>
+                {{ end }} 
+
+                {{ with .Params.tasks }}
+                <li id="model">Tasks: { {{ range . }} <a href="{{ "/tasks/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
+                {{ end }} 
+
+                {{ with .Params.data }}
+                <li id="model">Input data: { {{ range . }} <a href="{{ "/tasks/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
                 {{ end }} 
 
                 {{ with .Params.licence }}
@@ -73,9 +81,11 @@
                 </li>
                 {{ end }} 
 
+                <!-- Changed my mind on this taxonomy
                 {{ with .Params.models }}
                 <li id="model"> Models: { {{ range . }} <a href="{{ "/models/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
                 {{ end }} 
+                -->
 
             </ul>
 			</div>

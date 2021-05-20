@@ -6,7 +6,8 @@ stages: ['post-hoc']
 licence: 'MIT'
 repo: https://github.com/interpretml/DiCE
 languages: ['Python']
-models: []
+tasks: ['classification', 'regression']
+data: ['tabular']
 explanations: ['example-based']
 references: 
 - 

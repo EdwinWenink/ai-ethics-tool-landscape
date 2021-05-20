@@ -7,6 +7,8 @@ licence: 'MIT'
 repo: https://github.com/interpretml/interpret
 languages: ['Python']
 models: ['decision tree', 'decision tree ensemble']
+tasks: ['TODO']
+data: ['TODO']
 references: 
 - 
     name: 'Nori et al. - InterpretML: A Unified Framework for Machine Learning Interpretability'
