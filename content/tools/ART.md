@@ -6,6 +6,8 @@ stages: ['preprocessing', 'learning', 'evaluation', 'prediction' , 'post-hoc']
 licence: 'MIT'
 repo: https://github.com/Trusted-AI/adversarial-robustness-toolbox 
 languages: ['Python']
+data: ['tabular', 'text', 'image', 'audio', 'video']
+tasks: ['classification', 'object detection', 'speech recognition', 'generation', 'certification']
 references: 
 -
     name: 'Nicolae et al. - Adversarial Robustness Toolbox v1.0.0'
