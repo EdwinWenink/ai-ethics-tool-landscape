@@ -4,7 +4,8 @@ values: ['explainability']
 explanations: []
 fairness: []
 categories: ['model-agnostic']
-models: []
+tasks: ['classification']
+data: ['tabular']
 phases: ['data exploration']
 licence: 'LICENSE'
 repo: https://example.org
