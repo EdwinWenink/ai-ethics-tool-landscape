@@ -1,14 +1,15 @@
 ---
 title: 'InterpretML'
 values: ['explainability']
+explanations: ['white box', 'Shapley value', 'partial dependence plot', 'sensitivity analysis']
 categories: ['model-agnostic', 'model-specific']
 stages: ['learning', 'post-hoc']
 licence: 'MIT'
 repo: https://github.com/interpretml/interpret
 languages: ['Python']
 models: ['decision tree', 'decision tree ensemble']
-tasks: ['TODO']
-data: ['TODO']
+tasks: ['classification',  'regression']
+data: ['tabular', 'text','image']
 references: 
 - 
     name: 'Nori et al. - InterpretML: A Unified Framework for Machine Learning Interpretability'

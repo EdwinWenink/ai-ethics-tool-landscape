@@ -1,5 +1,5 @@
 ---
-title: LIME
+title: 'LIME: Local Interpretable Model-agnostic Explanations'
 values: ['explainability']
 explanations: ['local surrogate']
 categories: ['model-agnostic']
