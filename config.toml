@@ -22,6 +22,10 @@ enableGitInfo = true
         name = "Tools"
         url = "/tools/"
         weight = 4
+    [[menu.main]]
+        name = "Taxonomy"
+        url = "/taxonomy/"
+        weight = 5
 
 [taxonomies]
     value = "values"
