@@ -17,6 +17,9 @@ It is allowed that a tool addresses multiple values, categories, and stages of A
 It is also possible that a tool is available in multiple languages.
 Therefore these field values are provided as an array.
 
+If you make a tool with spaces in the filename, replace the spaces with regular dashes to ensure that cross-referencing to this tool works.
+This is because in the URL scheme of this project, spaces are replaced by dashes.
+
 The fields are used to automagically create taxonomies, so there's nothing more to it!
 
 ### Multiple references

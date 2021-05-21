@@ -6,7 +6,7 @@ fairness: []
 categories: ['model-agnostic']
 tasks: ['classification']
 data: ['tabular']
-phases: ['data exploration']
+stages: ['data exploration']
 licence: 'LICENSE'
 repo: https://example.org
 languages: ['Python']
