@@ -31,7 +31,7 @@
                     <!-- You can optionally provide extra information specific to the value 'explainability' -->
                     {{ with .Params.fairness }}
                     <ul>
-                        <li>Fairness type: { {{ range . }} {{.}} {{end}} }</li>
+                        <li>Fairness type: { {{ range . }}<a href="{{ "/fairness/" | relLangURL }}{{ . | urlize }}">{{.}}</a> {{end}} }</li>
                     </ul>
                     {{ end }}
                 </li> 
