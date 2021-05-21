@@ -47,6 +47,6 @@ ul li ul {list-style: '└── ';}
 hr { border-top: 2px solid red }
 blockquote {
 	border-left: 2px solid red;
-	margin: 0.7em 10px;
-	padding: 0.7em 20px;
+	margin: 0.2em 10px;
+	padding: 0.2em 20px;
 }
