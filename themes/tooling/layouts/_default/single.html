@@ -40,8 +40,8 @@
                 <li id="categories"> Categories: { {{ range . }} <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} } </li>
                 {{ end }} 
 
-                {{ with .Params.phases }}
-                <li id="design-phase"> Design phase: { {{ range . }} <a href="{{ "/phases/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
+                {{ with .Params.stages }}
+                <li id="design-phase"> Design stage: { {{ range . }} <a href="{{ "/stages/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
                 {{ end }} 
 
                 {{ with .Params.repo }}
