@@ -2,7 +2,7 @@
 title: 'DEDA: De Ethische Data Assistent'
 values: ['accountability']
 categories: ['model-agnostic']
-stages: ['data exploration']
+stages: ['design-phase']
 references: 
 - 
     name: 'De Ethische Data Assistent (DEDA)'
