@@ -4,6 +4,7 @@ values: ['accountability', 'fairness']
 categories: ['model-agnostic']
 stages: ['design phase', 'evaluation']
 references: 
+-
     name: 'Mitchell et al. - Model Cards for Model Reporting'
     url: 'https://doi.org/10.1145/3287560.3287596'
 ---
