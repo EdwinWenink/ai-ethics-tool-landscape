@@ -26,4 +26,5 @@ The [guidance material](http://aif360.mybluemix.net/resources#guidance) of the {
 
 > There are two opposing worldviews on group fairness: we’re all equal (WAE) and what you see is what you get (WYSIWYG) [4],[5]. The WAE worldview holds that all groups have similar abilities with respect to the task (even if we cannot observe this properly), whereas the WYSIWYG worldview holds that the observations reflect ability with respect to the task.  For example in college admissions, using SAT score as a feature for predicting success in college, the WYSIWYG worldview says that the score correlates well with future success and that there is a way to use the score to correctly compare the abilities of applicants.  In contrast, the WAE worldview says that the SAT score may contain structural biases so its distribution being different across groups should not be mistaken for a difference in distribution in ability.
 
+Some fairness metrics may be particularly suitable for one worldview but not the other.
 Again, using fairness tools responsibly requires awareness of these different worldviews and their implications on fairness.

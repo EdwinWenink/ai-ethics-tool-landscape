@@ -49,6 +49,7 @@ This addresses the potential issue that a machine learning model makes inference
 `Fairlearn` also contains a postprocessing algorithm ({{< stage "post-hoc" >}}) that takes (possibly biased) model output and then fits a monotone transformation such that a chosen parity constraint is still satisfied.
 
 All these methods are thus {{< category "model-agnostic" >}}.
+Note that being model-agnostic does not necessarily imply that the methods are also {{< stage "post-hoc" >}}, even though this generally does hold in the case of {{< value "explainability" >}}.
 
 ## Fairness definitions / Parity constraints
 
