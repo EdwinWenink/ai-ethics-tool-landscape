@@ -1,4 +1,4 @@
 <!--    This shortcode can be used to link to a design phase
         Its argument is allowed to be upper case -->
-{{ $section := "phases"}}
+{{ $section := "stages"}}
 <a href="/{{ $section }}/{{ lower (index .Params 0) | urlize }}/">{{ index .Params 0 }}</a>
