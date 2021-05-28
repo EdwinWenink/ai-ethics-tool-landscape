@@ -3,9 +3,9 @@ title: IBM AI Fairness 360
 values: ['fairness']
 fairness: ['group fairness', 'individual fairness']
 categories: ['model-agnostic']
-tasks: ['TODO']
-data: ['TODO']
-stages: ['preprocessing', 'post-hoc']
+tasks: ['classification']
+data: ['tabular']
+stages: ['preprocessing',  'learning', 'post-hoc']
 licence: 'Apache license'
 repo: https://github.com/Trusted-AI/AIF360
 languages: ['Python', 'R']
