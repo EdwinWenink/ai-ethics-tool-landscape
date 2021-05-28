@@ -53,7 +53,7 @@
                 {{ end }} 
 
                 {{ with .Params.data }}
-                <li id="model">Input data: { {{ range . }} <a href="{{ "/tasks/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
+                <li id="model">Input data: { {{ range . }} <a href="{{ "/data/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
                 {{ end }} 
 
                 {{ with .Params.licence }}
