@@ -3,7 +3,7 @@ title: IBM AI Fairness 360
 values: ['fairness']
 fairness: ['group fairness', 'individual fairness']
 categories: ['model-agnostic']
-tasks: ['classification']
+tasks: ['classification', 'regression']
 data: ['tabular']
 stages: ['preprocessing',  'learning', 'post-hoc']
 licence: 'Apache license'
@@ -15,16 +15,18 @@ references:
     url: 'https://arxiv.org/abs/1810.01943'
 ---
 
-The IBM AI Fairness 360 Toolkit contains several bias mitigation algorithms that are applicable to various stages of a machine learning pipeline.
-The toolkit implements different notions of [fairness](/values/fairness), both on [individual](/fairness/individual-fairness) and the [group](/fairness/group-fairness) level and several fairness metrics for both classes of fairness.
-The toolkit provides excellent [guidance on choosing metrics and mitigation](http://aif360.mybluemix.net/resources#guidance) given a particular goal and application.
+The IBM AI Fairness 360 Toolkit contains several bias mitigation algorithms that are applicable to various stages of the machine learning pipeline.
+The toolkit implements different notions of [fairness](/values/fairness), both on [individual](/fairness/individual-fairness) and the [group](/fairness/group-fairness) level, and several fairness metrics for both classes of fairness.
+The toolkit provides additional [guidance on choosing metrics and mitigation algorithms](http://aif360.mybluemix.net/resources#guidance) given a particular goal and application.
+
+The following should be noted when using the fairness toolkit (and other similar toolkits, for that matter):
 
 > The toolkit should only be used in a very limited setting: allocation or risk assessment problems with well-defined protected attributes in which one would like to have some sort of statistical or mathematical notion of sameness. Even then, the code and collateral contained in AIF360 is only a starting point to a broader discussion among multiple stakeholders on overall decision making workflows. [source](http://aif360.mybluemix.net/resources#guidance)
 
 Moreover, the choice for a particular algorithm from the toolkit also depends on assumptions on the equality of people.
-Within the group fairness approach, the toolkit distinguishes two different "worldviews" underlying group fairness, the "we're all equal" worldview and the "what you see if what you get worldview". See [group fairness](/fairness/group-fairness) for a further explanation.
+Within the group fairness approach, the toolkit distinguishes two different "worldviews" underlying group fairness: the "we're all equal" worldview and the "what you see if what you get worldview". See [group fairness](/fairness/group-fairness) for a further explanation.
 
-To choose an approach, we need to consider 1) the type of fairness to strive for, 2) given that type which fairness metrics/constraints to use (if applicable), 3) where in the pipeline to intervene, 4) which algorithm is suitable to support the made choices.
+To choose an approach, we need to consider 1) the type of fairness to strive for 2) given that type, which fairness metrics/constraints to use (if applicable) 3) where in the pipeline to intervene 4) which algorithm is suitable to support the made choices.
 
 ## Choosing fairness metrics
 
@@ -37,7 +39,7 @@ For individual fairness, refer to the [SampleDistortionMetric](https://aif360.re
 For group fairness, refer to [DatasetMetric](https://aif360.readthedocs.io/en/latest/modules/generated/aif360.metrics.DatasetMetric.html#aif360.metrics.DatasetMetric) and its children classes [BinaryLabelDatasetMetric](https://aif360.readthedocs.io/en/latest/modules/generated/aif360.metrics.BinaryLabelDatasetMetric.html#aif360.metrics.BinaryLabelDatasetMetric) and [ClassificationMetric](https://aif360.readthedocs.io/en/latest/modules/generated/aif360.metrics.ClassificationMetric.html#aif360.metrics.ClassificationMetric).
 
 It is possible to combine individual- and group fairness in a single metric. 
-The [ClassificationMetric](https://aif360.readthedocs.io/en/latest/modules/generated/aif360.metrics.ClassificationMetric.html#aif360.metrics.ClassificationMetric) contains several measures related to the [generalized entropy index](https://aif360.readthedocs.io/en/latest/modules/generated/aif360.metrics.ClassificationMetric.html#aif360.metrics.ClassificationMetric.generalized_entropy_index).
+The [ClassificationMetric](https://aif360.readthedocs.io/en/latest/modules/generated/aif360.metrics.ClassificationMetric.html#aif360.metrics.ClassificationMetric) contains several measures related to the [generalized entropy index](https://aif360.readthedocs.io/en/latest/modules/generated/aif360.metrics.ClassificationMetric.html#aif360.metrics.ClassificationMetric.generalized_entropy_index) suitable for this purpose.
 
 ### Stages
 
@@ -65,9 +67,11 @@ Some metrics are not specific to a particular worldview, such as metrics based o
 - `false_positive_rate_ratio`
 - `error_rate_ratio`
 
-## Algorithms
+## Choosing algorithms
 
 The API nicely lists algorithms by the stage they are applicable in.
+The algorithms that affect the {{< stage "learning" >}} stage, or "in-processing" stage as this toolkit calls it, are mostly suitable for classification.
+However, a reduction-based approach such as [GridSearchReduction]( https://aif360.readthedocs.io/en/latest/modules/generated/aif360.algorithms.inprocessing.GridSearchReduction.html#aif360.algorithms.inprocessing.GridSearchReduction) can also be used for regression.
 
 ### Preprocessing
 
