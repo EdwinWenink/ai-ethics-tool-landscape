@@ -46,13 +46,20 @@
 
     <h2><a href="/tools/">Tools</a></h2>
     <div class="tools">
+    <ul>
+    {{ range where .Site.RegularPages "Section" "tools" }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+        <!--
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
         <ul>
 		{{ range $paginator.Pages }}
             <li><a href="{{.Page.Permalink }}">{{ .Title}}</a></li>
 		{{ end }}
         </ul>
-        <!--{{ partial "pagination.html" . }}-->
+        {{ partial "pagination.html" . }}
+        -->
     <!--{{ partial "sidebar.html" . }}-->
     </div>
 
