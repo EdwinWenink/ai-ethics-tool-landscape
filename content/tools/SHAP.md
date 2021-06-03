@@ -3,7 +3,7 @@ title: 'SHAP: SHapley Additive exPlanations'
 values: ['explainability']
 explanations: ['local surrogate', 'Shapley value', 'salience', 'partial_dependence_plot', 'white box']
 categories: ['model-agnostic', 'model-specific']
-tasks: ['classification']
+tasks: ['classification', 'regression']
 data: ['tabular', 'image', 'text']
 stages: ['post-hoc']
 licence: 'MIT'
@@ -36,9 +36,27 @@ So it only requires input and output values, not model internals:
 
 > SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions. (README)
 
-## Model-specific optimizations
 
 Additionally, this package also contains several model-specific implementations of Shapley values that are optimized for a particular machine learning model and sometimes even for a particular library.
+
+If we inspect [__init__.py](https://github.com/slundberg/shap/blob/master/shap/__init__.py) we see the complete overview of how the explainers can easily be imported (the README does not list all of them at the moment of writing):
+
+```python
+# explainers
+from .explainers._explainer import Explainer
+from .explainers._kernel import Kernel as KernelExplainer
+from .explainers._sampling import Sampling as SamplingExplainer
+from .explainers._tree import Tree as TreeExplainer
+from .explainers._gpu_tree import GPUTree as GPUTreeExplainer
+from .explainers._deep import Deep as DeepExplainer
+from .explainers._gradient import Gradient as GradientExplainer
+from .explainers._linear import Linear as LinearExplainer
+from .explainers._partition import Partition as PartitionExplainer
+from .explainers._permutation import Permutation as PermutationExplainer
+from .explainers._additive import Additive as AdditiveExplainer
+```
+
+## Model-specific optimizations
 
 ### Ensembles of trees
 
@@ -46,10 +64,9 @@ There is specific support for tree (ensemble) models from `XGBoost`, `LightGBM`,
 These models can be passed directly into the `shap.Explainer`.
 This particular implementation can compute Shapley values exactly.
 
-The `shap.TreeExplainer` can also compute SHAP interaction values for pairwise interactions between features.
+The `shap.TreeExplainer` can also compute SHAP interaction values for pairwise interactions between features, as such: `shap.TreeExplainer(model).shap_interaction_values(X)`.
 
-`shap.TreeExplainer(model).shap_interaction_values(X)`.
-
+`shap.GPUTreeExplainer` is a TreeExplainer optimized for GPU.
 
 ### Natural Language models
 
