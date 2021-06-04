@@ -12,6 +12,7 @@ In order to contribute a tool, all you need to do is fork this repository, add a
 
 An archetype for the [correct format](/archetypes/_default.md) is provided under `/archetypes`.
 If you have `hugo` installed, you can use this archetype to easily add a tool to the content section with `hugo new tools/newtool.md`.
+You don't need `hugo` to contribute.
 
 It is allowed that a tool addresses multiple values, categories, and stages of AI development.
 It is also possible that a tool is available in multiple languages.
@@ -52,3 +53,11 @@ references:
 
 A wiki-like syntax is supported to cross-link to other tools, categories, values etc.
 In the markdown file for a tool, you can for example link to another tool with `{{< tool "Interpret-Text" >}}` or to another value with `{{< value "explainability" >}}`.
+
+## Collaboration
+
+This project is an open-ended work in progress.
+
+Collaboration is invited through the addition of tools, refining of existing entries, but also for example conceptual contributions.
+The concepts by which to categorize tools are up for discussion and some decisions were made to keep things simple enough.
+However, if you have productive suggestions, for example to adapt existing entry fields or maybe introduce a new one, feel free to open an issue.
