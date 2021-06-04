@@ -40,6 +40,9 @@ pre{color: #FFFFFF; background:#000000; padding:12px; overflow-x: auto}
 article{padding:2px 0}
 .center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
 img {display: block; max-width: 100%; height: auto;}
+nav {display: inline-block;}
+.inline-block {display: inline-block}
+.inline-logo {max-height: 1.5em;}
 figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
 figure {margin: auto}
 ul {list-style: square;}
