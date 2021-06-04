@@ -12,7 +12,10 @@ In order to contribute a tool, all you need to do is fork this repository, add a
 
 An archetype for the [correct format](/archetypes/_default.md) is provided under `/archetypes`.
 If you have `hugo` installed, you can use this archetype to easily add a tool to the content section with `hugo new tools/newtool.md`.
-You don't need `hugo` to contribute.
+You don't need `hugo` to contribute however.
+All you need is a text editor and the know-how to make a pull request.
+If you really don't know how to work with GitHub (and also really don't want to learn), there is always the back-up option of emailing me your contribution.
+Using GitHub is preferred though, also because you will be recorded as a contributor in the git history.
 
 It is allowed that a tool addresses multiple values, categories, and stages of AI development.
 It is also possible that a tool is available in multiple languages.
