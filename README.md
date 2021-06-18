@@ -1,7 +1,7 @@
 # AI Ethics Tool Landscape
 
 Open source and plain-text project providing a taxonomy for the existing tool landscape for ethical Artifical Intelligence.
-Built with [Hugo](https://gohugo.io/).
+Built with [Hugo](https://gohugo.io/) and published on [GitHub pages](https://edwinwenink.github.io/ai-ethics-tool-landscape/).
 
 Contributions via pull requests are welcome.
 
