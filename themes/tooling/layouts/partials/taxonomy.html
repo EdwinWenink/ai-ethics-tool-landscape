@@ -1,3 +1,4 @@
+{{ $baseURL := .Site.BaseURL }}
 <section>
     <ul id="all-taxonomies">
         {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
@@ -5,7 +6,7 @@
             <li><h3><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a></h3>
                     <ul>
                         {{ range $key, $value := $taxonomy }}
-                        <li><a href="{{$taxonomy_term}}/{{$key}}">{{ $key }}</a></li>
+                        <li><a href="{{ $baseURL }}/{{$taxonomy_term}}/{{$key}}">{{ $key }}</a></li>
                             <ul>
                                 {{ range $value.Pages }}
                                     <li hugo-nav="{{ .RelPermalink}}">
@@ -20,4 +21,3 @@
         {{ end }}
     </ul>
 </section>
-
