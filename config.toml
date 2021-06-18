@@ -4,6 +4,7 @@ title = "Ethical AI Tool Landscape"
 copyright = "Edwin Wenink"
 theme = "tooling"
 enableGitInfo = true
+canonifyURLs = true
 
 [menu]
     [[menu.main]]
