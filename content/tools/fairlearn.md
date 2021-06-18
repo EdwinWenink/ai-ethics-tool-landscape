@@ -66,7 +66,7 @@ The `fairlearn` package distinguishes and implements the following  [fairness co
 - EO - Equalized odds: "satisfies both *true positive rate parity* and *false positive rate parity*"
 - ERP - Error Rate Parity: "error rates should be the same across all groups", which again is another way of saying that sensitive features should not affect error rates
 
-`Fairlearn` includes various possible relaxations for these constraints, as exact parity is often unrlistic.
+`Fairlearn` includes various possible relaxations for these constraints, as exact parity is often unrealistic.
 
 ### Regression:
 
