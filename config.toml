@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://edwinwenink.github.io/ai-ethics-tool-landscape/"
 languageCode = "en-us"
 title = "Ethical AI Tool Landscape"
 copyright = "Edwin Wenink"
