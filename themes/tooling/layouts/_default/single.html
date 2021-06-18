@@ -41,7 +41,7 @@
                 {{ end }} 
 
                 {{ with .Params.stages }}
-                <li id="design-phase"> Design stage: { {{ range . }} <a href="{{ "/stages/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
+                <li id="design-phase"> Stage: { {{ range . }} <a href="{{ "/stages/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }} }</li> 
                 {{ end }} 
 
                 {{ with .Params.repo }}
