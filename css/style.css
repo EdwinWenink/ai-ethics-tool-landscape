@@ -42,7 +42,7 @@ article{padding:2px 0}
 img {display: block; max-width: 100%; height: auto;}
 nav {display: inline-block;}
 .inline-block {display: inline-block}
-.inline-logo {max-height: 1.5em;}
+.inline-logo {max-height: 1.5em; margin-right: 0.5em;}
 figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
 figure {margin: auto}
 ul {list-style: square;}
