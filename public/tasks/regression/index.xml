@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>regression on Ethical AI Tool Landscape</title>
+    <link>http://example.org/tasks/regression/</link>
+    <description>Recent content in regression on Ethical AI Tool Landscape</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Edwin Wenink</copyright>
+    
+	<atom:link href="http://example.org/tasks/regression/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DiCE: Diverse Counterfactual Explanations</title>
+      <link>http://example.org/tools/dice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/dice/</guid>
+      <description>From README:
+ DiCE implements counterfactual (CF) explanations that provide this information by showing feature-perturbed versions of the same person who would have received the loan, e.g., you would have received the loan if your income was higher by $10,000. In other words, it provides &amp;ldquo;what-if&amp;rdquo; explanations for model output and can be a useful complement to other explanation methods, both for end-users and model developers.
+ A main innovation of DiCE is that it implements a method to make producing counter-factual examples more model-agnostic:</description>
+    </item>
+    
+    <item>
+      <title>Fairlearn</title>
+      <link>http://example.org/tools/fairlearn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/fairlearn/</guid>
+      <description>The documentation of fairlearn is excellent and provides a good introduction to the topic of fairness in AI. It is emphasized that fairness algorithms are no plug-and-play technical solutions, but require serious thought about the context of the data and the problem at hand.
+ Fairness is a fundamentally sociotechnical challenge and cannot be solved with technical tools alone. They may be helpful for certain tasks such as assessing unfairness through various metrics, or to mitigate observed unfairness when training a model.</description>
+    </item>
+    
+    <item>
+      <title>IBM AI Fairness 360</title>
+      <link>http://example.org/tools/ibm-ai-fairness-360/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/ibm-ai-fairness-360/</guid>
+      <description>The IBM AI Fairness 360 Toolkit contains several bias mitigation algorithms that are applicable to various stages of the machine learning pipeline. The toolkit implements different notions of fairness, both on individual and the group level, and several fairness metrics for both classes of fairness. The toolkit provides additional guidance on choosing metrics and mitigation algorithms given a particular goal and application.
+The following should be noted when using the fairness toolkit (and other similar toolkits, for that matter):</description>
+    </item>
+    
+    <item>
+      <title>InterpretML</title>
+      <link>http://example.org/tools/interpretml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/interpretml/</guid>
+      <description>The InterpretML toolkit, developed at Microsoft, can be decomposed in two major components:
+ A set of interpretable &amp;ldquo;glassbox&amp;rdquo; models Techniques for explaining black box systems.  W.r.t. 1, InterpretML particularly contains a new interpretable &amp;ldquo;glassbox&amp;rdquo; model that combines Generalized Additive Models (GAMs) with machine learning techniques such as gradient boosted trees, called an Explainable Boosting Machine.
+Other than this new interpretable model, the main utility of InterpretML is to unify existing explainability techniques under a single API.</description>
+    </item>
+    
+    <item>
+      <title>LIME: Local Interpretable Model-agnostic Explanations</title>
+      <link>http://example.org/tools/lime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/lime/</guid>
+      <description>The type of explanation LIME offers is a surrogate model that approximates a black box prediction locally. The surrogate model is a sparse linear model, which means that the surrogate model is interpretable (in this case, it&amp;rsquo;s weights are meaningful). This simpler model can thus help to explain the black box prediction, assuming the local approximation is actually representative.
+The intuition behind this is provided in the README:
+ Intuitively, an explanation is a local linear approximation of the model&amp;rsquo;s behaviour.</description>
+    </item>
+    
+    <item>
+      <title>SHAP: SHapley Additive exPlanations</title>
+      <link>http://example.org/tools/shap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/shap/</guid>
+      <description>The SHAP package is built on the concept of a Shapley valueand can generate explanations model-agnostically. So it only requires input and output values, not model internals:
+ SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions. (README)
+ Additionally, this package also contains several model-specific implementations of Shapley values that are optimized for a particular machine learning model and sometimes even for a particular library.</description>
+    </item>
+    
+  </channel>
+</rss>

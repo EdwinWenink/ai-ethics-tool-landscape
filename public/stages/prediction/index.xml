@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prediction on Ethical AI Tool Landscape</title>
+    <link>http://example.org/stages/prediction/</link>
+    <description>Recent content in prediction on Ethical AI Tool Landscape</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Edwin Wenink</copyright>
+    
+	<atom:link href="http://example.org/stages/prediction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agile Ethics for AI</title>
+      <link>http://example.org/tools/agile_ethics_for_ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/agile_ethics_for_ai/</guid>
+      <description>Butnaru and others associated with the HAI center at Stanford set up a Agile Ethics workflow in the form of a Trello board. From left to right, the workflow walks you through relevant ethical considerations at the various steps of a machine learning pipeline. The phases are:
+ Scope  Consider ethical implications of the project Consider skill mapping (what&amp;rsquo;s the impact of AI on jobs)?  Facilitates up-skilling or a change of strategy in the use of human talent     Data audit  Led by Chief Data Officer &amp;ldquo;Meet and plan&amp;rdquo; stage in Agile Helpful: Data Ethics Canvas   Train  Build stage in Agile Consider (tools for) transparency and fairness   Analyse  Benchmarks, including benchmarks related to e.</description>
+    </item>
+    
+    <item>
+      <title>ART: Adversial Robustness 360 Toolbox</title>
+      <link>http://example.org/tools/art/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/art/</guid>
+      <description>The Adversial Robustness Toolbox (ART) is the first comprehensive toolbox that unifies many defensive techniques for four categories of adversial attacks on machine learning models. These categories are model evasion, model poisoning, model extraction and inference (e.g. inference of sensitive attributes in the training data; or determining whether an example was part of the training data). ART supports all popular machine learning frameworks, all data types and all machine learning tasks.</description>
+    </item>
+    
+    <item>
+      <title>SMACTR: End-to-End Framework for Internal Algorithmic Auditing</title>
+      <link>http://example.org/tools/smactr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/smactr/</guid>
+      <description>Introduction A major downside of external auditing is that it typically only can be done after model deployment. This paper presents a methodology for internal algorithmic auditing as an integral part of the development process, end-to-end.
+Those who move fast and break things, beware:
+ The audit process is necessarily boring, slow, meticulous and methodical—antithetical to the typical rapid development pace for AI technology. However, it is critical to slow down as algorithms continue to be deployed in increasingly high-stakes domains.</description>
+    </item>
+    
+  </channel>
+</rss>

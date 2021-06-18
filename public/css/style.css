@@ -1,0 +1,55 @@
+/* Source
+ * <!-- https://raw.githubusercontent.com/colorchestra/smol/master/static/css/style.css */
+
+:root {
+    --background-color: white;
+    --foreground-color: black;
+    --link-color: black;
+    --link-visited-color: black;
+    --font-size: 16px;
+    --font-color: #444;
+    --header-highlight: red;
+}
+
+html {overflow-y: scroll}
+body{
+max-width:800px;
+margin:40px auto;
+padding:0 10px;
+font:var(--font-size)/1.5 monospace;
+color:var(--font-color)}
+h1,h2,h3{
+line-height:1.2}
+h1.title{
+    text-decoration: underline 5px solid red;
+}
+/* Markdown-like headers */
+h2::before { color: var(--header-highlight); content: '## '; }
+h3::before { color: var(--header-highlight); content: '### '; }
+h4::before { color: var(--header-highlight); content: '#### '; }
+h5::before { color: var(--header-highlight); content: '##### '; }
+h6::before { color: var(--header-highlight); content: '###### '; }
+@media (prefers-color-scheme: dark)
+{body{color:var(--foreground-color);
+background:var(--background-color)}
+a:link{color:var(--link-color)}
+a:visited{color: var(--link-visited-color)}}
+/*header{border-bottom:1px dashed}*/
+p > code, li > code{color: #FFFFFF; background:#000000; padding:2px}
+pre{color: #FFFFFF; background:#000000; padding:12px; overflow-x: auto}
+article{padding:2px 0}
+.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
+img {display: block; max-width: 100%; height: auto;}
+nav {display: inline-block;}
+.inline-block {display: inline-block}
+.inline-logo {max-height: 1.5em;}
+figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
+figure {margin: auto}
+ul {list-style: square;}
+ul li ul {list-style: '└── ';}
+hr { border-top: 2px solid red }
+blockquote {
+	border-left: 2px solid red;
+	margin: 0.2em 10px;
+	padding: 0.2em 20px;
+}

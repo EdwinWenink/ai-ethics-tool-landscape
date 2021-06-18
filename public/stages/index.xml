@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stages on Ethical AI Tool Landscape</title>
+    <link>http://example.org/stages/</link>
+    <description>Recent content in Stages on Ethical AI Tool Landscape</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Edwin Wenink</copyright>
+    
+	<atom:link href="http://example.org/stages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>design-phase</title>
+      <link>http://example.org/stages/design-phase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/stages/design-phase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>preprocessing</title>
+      <link>http://example.org/stages/preprocessing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/stages/preprocessing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learning</title>
+      <link>http://example.org/stages/learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/stages/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>evaluation</title>
+      <link>http://example.org/stages/evaluation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/stages/evaluation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prediction</title>
+      <link>http://example.org/stages/prediction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/stages/prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>post-hoc</title>
+      <link>http://example.org/stages/post-hoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/stages/post-hoc/</guid>
+      <description>&amp;ldquo;Post-hoc&amp;rdquo; means that a tool, method or technique is applicable after predictions have been made. Examples are model-agnosticexplainability techniques that require both model inputs and outputs, or postprocessing to enforce parity constraints for fairness.</description>
+    </item>
+    
+  </channel>
+</rss>

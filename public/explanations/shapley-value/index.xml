@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shapley value on Ethical AI Tool Landscape</title>
+    <link>http://example.org/explanations/shapley-value/</link>
+    <description>Recent content in Shapley value on Ethical AI Tool Landscape</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Edwin Wenink</copyright>
+    
+	<atom:link href="http://example.org/explanations/shapley-value/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>InterpretML</title>
+      <link>http://example.org/tools/interpretml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/interpretml/</guid>
+      <description>The InterpretML toolkit, developed at Microsoft, can be decomposed in two major components:
+ A set of interpretable &amp;ldquo;glassbox&amp;rdquo; models Techniques for explaining black box systems.  W.r.t. 1, InterpretML particularly contains a new interpretable &amp;ldquo;glassbox&amp;rdquo; model that combines Generalized Additive Models (GAMs) with machine learning techniques such as gradient boosted trees, called an Explainable Boosting Machine.
+Other than this new interpretable model, the main utility of InterpretML is to unify existing explainability techniques under a single API.</description>
+    </item>
+    
+    <item>
+      <title>SHAP: SHapley Additive exPlanations</title>
+      <link>http://example.org/tools/shap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/shap/</guid>
+      <description>The SHAP package is built on the concept of a Shapley valueand can generate explanations model-agnostically. So it only requires input and output values, not model internals:
+ SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions. (README)
+ Additionally, this package also contains several model-specific implementations of Shapley values that are optimized for a particular machine learning model and sometimes even for a particular library.</description>
+    </item>
+    
+  </channel>
+</rss>

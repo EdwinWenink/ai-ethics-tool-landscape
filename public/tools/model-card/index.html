@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Model cards for Model Reporting</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+</head>
+<body>
+	<header>
+    <div class='inline-block'>
+        <a href="https://github.com/EdwinWenink/ai-ethics-tool-landscape"><img src='/img/GitHub-Mark/PNG/GitHub-Mark-32px.png' alt="Github page" class='inline-logo'></a>
+    </div>
+	<nav>
+        <a href="http://example.org/">Ethical AI Tool Landscape</a>
+        
+                
+                > <a href="/values/">Values</a> 
+                
+                > <a href="/stages/">Stages</a> 
+                
+                > <a href="/categories/">Categories</a> 
+                
+                > <a href="/tools/">Tools</a> 
+                
+                > <a href="/taxonomy/">Taxonomy</a> 
+                
+        
+	</nav>
+</header>
+
+	
+	<main>
+		<article>
+			<h1 class="title">Model cards for Model Reporting</h1>
+            
+
+			<div>
+
+            
+
+            <ul>
+                
+                <li id="values"> Values: { 
+                    
+                        <a href="/values/accountability">accountability</a>
+                    
+                        <a href="/values/fairness">fairness</a>
+                     } 
+                 
+
+                    
+                    
+
+                    
+                    
+                </li> 
+
+                
+                <li id="categories"> Categories: {  <a href="/categories/model-agnostic">model-agnostic</a> } </li>
+                 
+
+                
+                <li id="design-phase"> Design stage: {  <a href="/stages/design-phase">design phase</a> <a href="/stages/evaluation">evaluation</a> }</li> 
+                 
+
+                 
+
+                 
+
+                 
+
+                 
+
+                 
+
+                
+                <li id="references">References: 
+                    
+                    
+                        
+                        <ul> 
+                            <li><a href="https://doi.org/10.1145/3287560.3287596">Mitchell et al. - Model Cards for Model Reporting</a></li>
+                        </ul>
+                        
+                     
+                </li>
+                 
+
+                
+
+            </ul>
+			</div>
+
+            <hr>
+
+			<div>
+				<p>Model cards are an extension of the 
+
+<a href="/tools/datasheet/">datasheet</a>
+ to machine learning models.</p>
+<blockquote>
+<p>Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions, such as across different cultural, demographic, or phenotypic groups (e.g., race, geographic location, sex, Fitzpatrick skin type [15]) and intersectional groups (e.g., age and race, or sex and Fitzpatrick skin type) that are relevant to the intended application domains. Model cards also disclose the context in which models are intended to be used, details of the performance evaluation procedures, and other relevant information. While we focus primarily on human-centered machine learning models in the application fields of computer vision and natural language processing, this framework can be used to document any trained machine learning
+model. (1)</p>
+</blockquote>
+<p>A model card records the following fields.</p>
+<ol>
+<li>Model details
+<ul>
+<li>E.g. model type, information about training algorithms and parameters, fairness constraints etc.</li>
+</ul>
+</li>
+<li>Intended use
+<ul>
+<li>Can also include a specification of how the model is <em>not</em> intended to be used.</li>
+</ul>
+</li>
+<li>Relevant factors
+<ul>
+<li>E.g. involved demographic groups</li>
+</ul>
+</li>
+<li>Metrics
+<ul>
+<li>&ldquo;should be chosen to reflect potential real-world impacts of the model&rdquo;</li>
+</ul>
+</li>
+<li>Evaluation data
+<ul>
+<li>Which datasets were used for evaluation? Why those? And which preprocessing was used?</li>
+</ul>
+</li>
+<li>Training data
+<ul>
+<li>If private, try to include as much as possible, such as distributions over relevant factors</li>
+</ul>
+</li>
+<li>Quantitative analyses
+<ul>
+<li>Should be <em>disaggregated</em> and run both on each identification factor (cf. 3) independently, and on combinations of factors.</li>
+</ul>
+</li>
+<li>Ethical considerations</li>
+<li>Caveats and recommendations</li>
+</ol>
+<p>See the paper for more details and examples of filled in model cards.</p>
+
+			</div>
+		</article>
+	</main>
+    
+
+	<footer>
+    Last modified on 27-05-2021.
+    <p>&copy; 2021 <a href="http://example.org/">Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Individual fairness on Ethical AI Tool Landscape</title>
+    <link>http://example.org/fairness/individual-fairness/</link>
+    <description>Recent content in Individual fairness on Ethical AI Tool Landscape</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Edwin Wenink</copyright>
+    
+	<atom:link href="http://example.org/fairness/individual-fairness/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IBM AI Fairness 360</title>
+      <link>http://example.org/tools/ibm-ai-fairness-360/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tools/ibm-ai-fairness-360/</guid>
+      <description>The IBM AI Fairness 360 Toolkit contains several bias mitigation algorithms that are applicable to various stages of the machine learning pipeline. The toolkit implements different notions of fairness, both on individual and the group level, and several fairness metrics for both classes of fairness. The toolkit provides additional guidance on choosing metrics and mitigation algorithms given a particular goal and application.
+The following should be noted when using the fairness toolkit (and other similar toolkits, for that matter):</description>
+    </item>
+    
+  </channel>
+</rss>

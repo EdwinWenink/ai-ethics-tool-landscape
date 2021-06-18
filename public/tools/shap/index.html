@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SHAP: SHapley Additive exPlanations</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+</head>
+<body>
+	<header>
+    <div class='inline-block'>
+        <a href="https://github.com/EdwinWenink/ai-ethics-tool-landscape"><img src='/img/GitHub-Mark/PNG/GitHub-Mark-32px.png' alt="Github page" class='inline-logo'></a>
+    </div>
+	<nav>
+        <a href="http://example.org/">Ethical AI Tool Landscape</a>
+        
+                
+                > <a href="/values/">Values</a> 
+                
+                > <a href="/stages/">Stages</a> 
+                
+                > <a href="/categories/">Categories</a> 
+                
+                > <a href="/tools/">Tools</a> 
+                
+                > <a href="/taxonomy/">Taxonomy</a> 
+                
+        
+	</nav>
+</header>
+
+	
+	<main>
+		<article>
+			<h1 class="title">SHAP: SHapley Additive exPlanations</h1>
+            
+
+			<div>
+
+            
+
+            <ul>
+                
+                <li id="values"> Values: { 
+                    
+                        <a href="/values/explainability">explainability</a>
+                     } 
+                 
+
+                    
+                    
+                    <ul>
+                        <li>Explanation type: { <a href="/explanations/local-surrogate">local surrogate</a> <a href="/explanations/shapley-value">Shapley value</a> <a href="/explanations/salience">salience</a> <a href="/explanations/partial_dependence_plot">partial_dependence_plot</a> <a href="/explanations/white-box">white box</a>  }</li>
+                    </ul>
+                    
+
+                    
+                    
+                </li> 
+
+                
+                <li id="categories"> Categories: {  <a href="/categories/model-agnostic">model-agnostic</a> <a href="/categories/model-specific">model-specific</a> } </li>
+                 
+
+                
+                <li id="design-phase"> Design stage: {  <a href="/stages/post-hoc">post-hoc</a> }</li> 
+                 
+
+                
+                <li id="repository"> Repository: <a href="https://github.com/slundberg/shap" target="_blank">https://github.com/slundberg/shap</a></li>
+                 
+
+                
+                <li id="model">Tasks: {  <a href="/tasks/classification">classification</a> <a href="/tasks/regression">regression</a> }</li> 
+                 
+
+                
+                <li id="model">Input data: {  <a href="/data/tabular">tabular</a> <a href="/data/image">image</a> <a href="/data/text">text</a> }</li> 
+                 
+
+                
+                <li id="licence"> Licence: MIT</li>
+                 
+
+                
+                <li id="languages"> Languages: { <a href="/languages/python">Python</a>  }</li>
+                 
+
+                
+                <li id="references">References: 
+                    
+                    
+                        
+                        <ul> 
+                            <li><a href="https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html">Lundberg et al. 2017 - A Unified Approach to Interpreting Model Predictions</a></li>
+                        </ul>
+                        
+                    
+                    
+                        
+                        <ul> 
+                            <li><a href="https://www.nature.com/articles/s42256-019-0138-9">Lundberg et al. 2020 - From local explanations to global understanding with explainable AI for trees</a></li>
+                        </ul>
+                        
+                    
+                    
+                        
+                        <ul> 
+                            <li><a href="https://arxiv.org/abs/1704.02685">Shrikumar et al. 2019 - Learning Important Features Through Propagating Activation Differences</a></li>
+                        </ul>
+                        
+                    
+                    
+                        
+                        <ul> 
+                            <li><a href="https://arxiv.org/abs/1706.03825">Smilkov et al. 2017 - SmoothGrad: removing noise by adding noise</a></li>
+                        </ul>
+                        
+                    
+                    
+                        
+                        <ul> 
+                            <li><a href="https://arxiv.org/abs/1703.01365">Sundararajan et al. 2017 - Axiomatic Attribution for Deep Networks</a></li>
+                        </ul>
+                        
+                     
+                </li>
+                 
+
+                
+
+            </ul>
+			</div>
+
+            <hr>
+
+			<div>
+				<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>The SHAP package is built on the concept of a 
+
+<a href="/explanations/shapley-value/">Shapley value</a>
+ and can generate explanations model-agnostically.
+So it only requires input and output values, not model internals:</p>
+<blockquote>
+<p>SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions. (README)</p>
+</blockquote>
+<p>Additionally, this package also contains several model-specific implementations of Shapley values that are optimized for a particular machine learning model and sometimes even for a particular library.</p>
+<p>If we inspect <a href="https://github.com/slundberg/shap/blob/master/shap/__init__.py"><strong>init</strong>.py</a> we see the complete overview of how the explainers can easily be imported (the README does not list all of them at the moment of writing):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># explainers</span>
+<span style="color:#f92672">from</span> .explainers._explainer <span style="color:#f92672">import</span> Explainer
+<span style="color:#f92672">from</span> .explainers._kernel <span style="color:#f92672">import</span> Kernel <span style="color:#66d9ef">as</span> KernelExplainer
+<span style="color:#f92672">from</span> .explainers._sampling <span style="color:#f92672">import</span> Sampling <span style="color:#66d9ef">as</span> SamplingExplainer
+<span style="color:#f92672">from</span> .explainers._tree <span style="color:#f92672">import</span> Tree <span style="color:#66d9ef">as</span> TreeExplainer
+<span style="color:#f92672">from</span> .explainers._gpu_tree <span style="color:#f92672">import</span> GPUTree <span style="color:#66d9ef">as</span> GPUTreeExplainer
+<span style="color:#f92672">from</span> .explainers._deep <span style="color:#f92672">import</span> Deep <span style="color:#66d9ef">as</span> DeepExplainer
+<span style="color:#f92672">from</span> .explainers._gradient <span style="color:#f92672">import</span> Gradient <span style="color:#66d9ef">as</span> GradientExplainer
+<span style="color:#f92672">from</span> .explainers._linear <span style="color:#f92672">import</span> Linear <span style="color:#66d9ef">as</span> LinearExplainer
+<span style="color:#f92672">from</span> .explainers._partition <span style="color:#f92672">import</span> Partition <span style="color:#66d9ef">as</span> PartitionExplainer
+<span style="color:#f92672">from</span> .explainers._permutation <span style="color:#f92672">import</span> Permutation <span style="color:#66d9ef">as</span> PermutationExplainer
+<span style="color:#f92672">from</span> .explainers._additive <span style="color:#f92672">import</span> Additive <span style="color:#66d9ef">as</span> AdditiveExplainer
+</code></pre></div><h2 id="model-specific-optimizations">Model-specific optimizations</h2>
+<h3 id="ensembles-of-trees">Ensembles of trees</h3>
+<p>There is specific support for tree (ensemble) models from <code>XGBoost</code>, <code>LightGBM</code>, <code>CatBoost</code>, <code>scikit-learn</code>, <code>pyspark</code>.
+These models can be passed directly into the <code>shap.Explainer</code>.
+This particular implementation can compute Shapley values exactly.</p>
+<p>The <code>shap.TreeExplainer</code> can also compute SHAP interaction values for pairwise interactions between features, as such: <code>shap.TreeExplainer(model).shap_interaction_values(X)</code>.</p>
+<p><code>shap.GPUTreeExplainer</code> is a TreeExplainer optimized for GPU.</p>
+<h3 id="natural-language-models">Natural Language models</h3>
+<p>You can generate Shapley values for a NLP transformer pipeline (e.g. one from <a href="https://huggingface.co/">Hugging Face</a>) by passing the whole pipeline into the default <code>shap.Explainer</code>.</p>
+<h3 id="deep-neural-networks">Deep Neural Networks</h3>
+<p>A <code>shap.DeepExplainer</code> is provided specifically for deep learning models and is an extension of <em>DeepLIFT</em> (see Shrikumar et al., 2018).</p>
+<ul>
+<li>Support for TensorFlow/Keras and PyTorch (preliminary support at the moment of writing).</li>
+<li>&ldquo;DeepLIFT compares the activation of each neuron to its &lsquo;reference activation&rsquo; and assigns contribution scores according to the difference. By optionally giving separate consideration to positive and negative contributions, DeepLIFT can also reveal dependencies which are missed by other approaches.&rdquo; (Shrikumar et al., 2017)</li>
+</ul>
+<h3 id="gradient-based-explanations">Gradient-based explanations</h3>
+<p><code>shap.GradientExplainer</code></p>
+<p>Gradient-based methods can also be used to explain the effect of (intermediate) deep learning layers on the network&rsquo;s output.
+For example for an input image, you can visualize which pixels in a feature map increase the probability of a particular class and which ones decrease that probability.</p>
+<blockquote>
+<p>Expected gradients combines ideas from Integrated Gradients, SHAP, and SmoothGrad into a single expected value equation. This allows an entire dataset to be used as the background distribution (as opposed to a single reference value) and allows local smoothing. If we approximate the model with a linear function between each background data sample and the current input to be explained, and we assume the input features are independent then expected gradients will compute approximate SHAP values. (README)</p>
+</blockquote>
+<h3 id="model-agnostic-explanations">Model-agnostic explanations</h3>
+<p><code>shap.KernelExplainer</code></p>
+<blockquote>
+<p>Kernel SHAP uses a specially-weighted local linear regression to estimate SHAP values for any model. (README)</p>
+</blockquote>
+<p>The Shapley values indicate a positive or negative push away from the average model output over the whole training dataset.</p>
+
+			</div>
+		</article>
+	</main>
+    
+
+	<footer>
+    Last modified on 03-06-2021.
+    <p>&copy; 2021 <a href="http://example.org/">Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+
+</body>
+</html>
