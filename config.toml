@@ -16,17 +16,13 @@ canonifyURLs = true
         url = "/stages/"
         weight = 2
     [[menu.main]]
-        name = "Categories"
-        url = "/categories/"
-        weight = 3
-    [[menu.main]]
         name = "Tools"
         url = "/tools/"
         weight = 4
     [[menu.main]]
         name = "Taxonomy"
         url = "/taxonomy/"
-        weight = 5
+        weight = 4
 
 [taxonomies]
     value = "values"
