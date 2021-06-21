@@ -1,6 +1,6 @@
 ---
 title: 'ART: Adversial Robustness 360 Toolbox'
-values: ['safety']
+values: ['security']
 categories: ['model-specific', 'model-agnostic']
 stages: ['preprocessing', 'learning', 'evaluation', 'prediction' , 'post-hoc']
 licence: 'MIT'
