@@ -1,7 +1,7 @@
 ---
 title: 'SHAP: SHapley Additive exPlanations'
 values: ['explainability']
-explanations: ['local surrogate', 'Shapley value', 'salience', 'partial_dependence_plot', 'white box']
+explanations: ['local surrogate', 'Shapley value', 'salience', 'partial dependence plot', 'white box']
 categories: ['model-agnostic', 'model-specific']
 tasks: ['classification', 'regression']
 data: ['tabular', 'image', 'text']
