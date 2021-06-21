@@ -1,6 +1,6 @@
 ---
 title: 'AI Ethics Guidelines Global Inventory'
-values: ['explainability', 'fairness', 'accountability', 'privacy', 'safety']
+values: ['accountability']
 categories: ['model-agnostic']
 stages: ['design-phase']
 references: 
