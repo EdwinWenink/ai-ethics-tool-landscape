@@ -10,7 +10,7 @@ Contributions via pull requests are welcome.
 All content to this website is provided through a simple markdown file with some YAML metadata.
 In order to contribute a tool, all you need to do is fork this repository, add a markdown file to `/content/tools/` and make a pull request.
 
-An archetype for the [correct format](/archetypes/_default.md) is provided under `/archetypes`.
+An archetype for the [correct format](/archetypes/default.md) is provided under `/archetypes`.
 If you have `hugo` installed, you can use this archetype to easily add a tool to the content section with `hugo new tools/newtool.md`.
 You don't need `hugo` to contribute however.
 All you need is a text editor and the know-how to make a pull request.
