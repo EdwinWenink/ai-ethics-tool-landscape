@@ -1,7 +1,7 @@
 ---
 title: 'Equity Evaluation Corpus (EEC)'
 values: ['fairness']
-fairness: ['group']
+fairness: ['group fairness']
 categories: ['model-agnostic']
 data: ['text']
 tasks: ['natural language processing']
