@@ -39,7 +39,7 @@ This package does not seem to be very actively maintained anymore and support fo
 ## Attributions
 
 The README gives the following clear and succinct explanation of what an "attribution" is.
-All methods included in this approach allow visualization of what a particular targeted neuron "sees" for some input:
+All methods included in this approach allow visualization of how each input feature contributes to the final prediction, in terms of what a particular targeted neuron "sees":
 
 > Consider a network and a specific input to this network (eg. an image, if the network is trained for image classification). The input is multi-dimensional, made of several features. In the case of images, each pixel can be considered a feature. The goal of an attribution method is to determine a real value R(x_i) for each input feature, with respect to a target neuron of interest (for example, the activation of the neuron corresponsing to the correct class).
 >
@@ -66,6 +66,4 @@ This is thus a notable difference with the original {{< tool "DeepLIFT" >}} impl
 - Occlusion (extension of the method explained by Zeiler et al. )
 - Shapley value sampling (see Castro et al.)
     * Cf. {{< tool "SHAP" >}}, where insights from this project have been integrated in the `DeepExplainer`.
-
-
 
