@@ -1,7 +1,7 @@
 ---
 title: 'Interpret-Text'
 values: ['explainability']
-explanations: ['salience', 'example-based']
+explanations: ['gradient-based', 'example-based']
 categories: ['model-specific']
 stages: ['learning', 'post-hoc']
 licence: 'MIT'
