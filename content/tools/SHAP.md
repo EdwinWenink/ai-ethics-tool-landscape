@@ -1,7 +1,7 @@
 ---
 title: 'SHAP: SHapley Additive exPlanations'
 values: ['explainability']
-explanations: ['local surrogate', 'Shapley value', 'salience', 'partial dependence plot', 'white box']
+explanations: ['local surrogate', 'Shapley value', 'gradient-based', 'partial dependence plot', 'white box']
 categories: ['model-agnostic', 'model-specific']
 tasks: ['classification', 'regression']
 data: ['tabular', 'image', 'text']
@@ -74,7 +74,7 @@ You can generate Shapley values for a NLP transformer pipeline (e.g. one from [H
 
 ### Deep Neural Networks
 
-A `shap.DeepExplainer` is provided specifically for deep learning models and is an extension of *DeepLIFT* (see Shrikumar et al., 2018).
+A `shap.DeepExplainer` is provided specifically for deep learning models and is an extension of {{< tool "DeepLIFT" >}} (see Shrikumar et al., 2018).
 
 - Support for TensorFlow/Keras and PyTorch (preliminary support at the moment of writing).
 - "DeepLIFT compares the activation of each neuron to its 'reference activation' and assigns contribution scores according to the difference. By optionally giving separate consideration to positive and negative contributions, DeepLIFT can also reveal dependencies which are missed by other approaches." (Shrikumar et al., 2017)

@@ -3,9 +3,9 @@ title: 'DeepLIFT'
 values: ['explainability']
 explanations: ['gradient-based']
 categories: ['model-specific']
-tasks: ['classification', 'regression']
+tasks: ['classification', 'segmentation' ]
 data: ['image', 'text']
-stages: ['prediction']
+stages: ['prediction', 'post-hoc']
 licence: MIT
 repo: 'https://github.com/kundajelab/deeplift'
 language: ['Python']
@@ -19,6 +19,9 @@ references:
 - 
     name: 'Sundararajan et al. - Gradients of Counterfactuals'
     url: 'https://arxiv.org/abs/1611.02639'
+-
+    name: 'Sundararajan et al. - Axiomatic Attribution for Deep Networks'
+    url: 'https://arxiv.org/abs/1703.01365'
 ---
 
 A brief explanation of the {{< explanation "gradient-based" >}} interpretability method called DeepLIFT is given by Shrikumar et al. in the abstract of the linked paper:
@@ -28,14 +31,19 @@ A brief explanation of the {{< explanation "gradient-based" >}} interpretability
 The linked repository implements the functionality explained in this paper.
 Other {{< explanation "gradient-based" >}} interpretation methods are also implemented, including:
 
-- gradient-times-input (equivalent to Layerwise Relevance Propagation in networks using ReLU)
+- gradient * input (equivalent to Layerwise Relevance Propagation in networks using ReLU; see Shrikumar et al. )
 - guided backprop (see Springenberg et al.)
-- integrated gradients ( see Sundararajan et al. )
+- integrated gradients ( see the two papers from Sundararajan et al. )
 
 DeepLIFT is {{< category "model-specific" >}} because it is designed specifically for deep neural networks, more specifically `Keras` and `TensorFlow` models. 
 
 The first step to applying `DeepLIFT` is to construct a new layer for each layer in the original neural network and specify it's inputs, thereby creating a network that will return importances.
 For `Keras` (2.0) models, there is autoconversion functionality as illustrated in the quickstart of the README.
+
+Note that because these layers are extra, existing gradient operators are not overridden.
+The application of `DeepLIFT` should thus not affect the predictions of the original network.
+
+TODO: explain difference between the Rescale rule and the RevealCancel rule.
 
 A 15-min introduction to DeepLIFT can be found [here](https://vimeo.com/238275076):
 
