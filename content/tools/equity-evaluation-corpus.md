@@ -4,7 +4,7 @@ values: ['fairness']
 fairness: ['group fairness']
 categories: ['model-agnostic']
 data: ['text']
-tasks: ['natural language processing']
+tasks: ['NLP']
 stages: ['evaluation']
 references: 
 - 
