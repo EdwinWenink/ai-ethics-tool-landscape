@@ -8,7 +8,7 @@ Contributions via pull requests are welcome.
 ## Adding a tool
 
 All content to this website is provided through a simple markdown file with some YAML metadata.
-In order to contribute a tool, all you need to do is fork this repository, add a markdown file to `/content/tools/` and make a pull request.
+In order to contribute a tool, all you need to do is fork this repository, add a markdown file to `/content/tools/` and make a pull request to the `develop` branch.
 
 An archetype for the [correct format](/archetypes/default.md) is provided under `/archetypes`.
 If you have `hugo` installed, you can use this archetype to easily add a tool to the content section with `hugo new tools/newtool.md`.
@@ -62,5 +62,6 @@ In the markdown file for a tool, you can for example link to another tool with `
 This project is an open-ended work in progress.
 
 Collaboration is invited through the addition of tools, refining of existing entries, but also for example conceptual contributions.
+You can also refine descriptions of any of the taxonomy terms, for example the description of an [explanation type](https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/).
 The concepts by which to categorize tools are up for discussion and some decisions were made to keep things simple enough.
-However, if you have productive suggestions, for example to adapt existing entry fields or maybe introduce a new one, feel free to open an issue.
+However, if you have constructive suggestions, for example to adapt existing entry fields or maybe introduce a new one, feel free to open an issue.
