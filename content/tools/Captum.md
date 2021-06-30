@@ -15,7 +15,7 @@ references:
     url: 'https://captum.ai/docs/algorithms_comparison_matrix'
 ---
 
-Captum is a model interpretability library specifically for the `PyTorch` library.
+Captum is a model interpretability library specifically `PyTorch`.
 It is actively maintained at the moment of writing and supports an extensive array of interpretability methods.
 
 The Captum website also offers a large range of [hands-on tutorials](https://captum.ai/tutorials/) for various use cases.

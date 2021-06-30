@@ -1,7 +1,7 @@
 ---
 title: 'ELI5'
 values: ['explainability']
-explanations: ['white box', 'gradient-based', 'local surrogate', 'permutation']
+explanations: ['white box', 'gradient-based', 'local surrogate', 'perturbation']
 categories: ['model-specific', 'model-agnostic']
 tasks: ['classification', 'NLP']
 data: ['tabular', 'text', 'image']
