@@ -1,7 +1,7 @@
 ---
 title: 'Captum'
 values: ['explainability']
-explanations: ['gradient-based', 'Shapley values']
+explanations: ['gradient-based', 'Shapley value']
 categories: ['model-specific']
 tasks: ['classification', 'segmentation', 'regression']
 data: ['tabular', 'image']
