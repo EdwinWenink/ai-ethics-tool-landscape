@@ -26,7 +26,7 @@ The Captum website also offers a large range of [hands-on tutorials](https://cap
 All paper references for each of the supported methods are [listed in the README](https://github.com/pytorch/captum#references-of-algorithms), so they will not be repeated here.
 
 Have a look at this nice [algorithms comparison matrix](https://captum.ai/docs/algorithms_comparison_matrix) offered on the [captum.ai](captum.ai) website.
-All support algorithms are [described here](https://captum.ai/docs/algorithms).
+All supported algorithms are [described here](https://captum.ai/docs/algorithms).
 
 It is good to note that many of these algorithms have multiple variants, as also explained in the [algorithm explanations](https://captum.ai/docs/algorithms):
 
