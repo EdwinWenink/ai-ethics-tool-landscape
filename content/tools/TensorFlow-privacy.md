@@ -10,12 +10,11 @@ repo: https://github.com/tensorflow/privacy
 languages: ['Python']
 references:
 -
-    - name: 'McMahan et al. - A General Approach to Adding Differential Privacy to Iterative Training Procedures'
-    - url: 'https://arxiv.org/abs/1812.06210'
+    name: 'McMahan et al. - A General Approach to Adding Differential Privacy to Iterative Training Procedures'
+    url: 'https://arxiv.org/abs/1812.06210'
 -   
-    - name: 'Introducing TensorFlow Privacy: Learning with Differential Privacy for Training Data'
-    - url: 'https://blog.tensorflow.org/2019/03/introducing-tensorflow-privacy-learning.html'
-
+    name: 'Introducing TensorFlow Privacy: Learning with Differential Privacy for Training Data'
+    url: 'https://blog.tensorflow.org/2019/03/introducing-tensorflow-privacy-learning.html'
 ---
 
 TensorFlow Privacy is a library that allows you to replace default TensorFlow optimizers with optimizers that allow {{< stage "learning" >}} with differential privacy, i.e. they implement forms of stochastic gradient descent (SGD) with differential privacy.
