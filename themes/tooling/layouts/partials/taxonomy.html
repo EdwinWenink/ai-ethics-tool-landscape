@@ -3,7 +3,7 @@
     <ul id="all-taxonomies">
         {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
             {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
-            <li><h3><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a></h3>
+            <li><h2><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a></h2>
                     <ul>
                         {{ range $key, $value := $taxonomy }}
                         <li><a href="{{ $baseURL }}/{{$taxonomy_term}}/{{$key}}">{{ .Page.Title }}</a></li>
