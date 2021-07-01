@@ -6,7 +6,8 @@
             <li><h3><a href="{{ .Permalink }}">{{ $taxonomy_term }}</a></h3>
                     <ul>
                         {{ range $key, $value := $taxonomy }}
-                        <li><a href="{{ $baseURL }}/{{$taxonomy_term}}/{{$key}}">{{ $key }}</a></li>
+                        <li><a href="{{ $baseURL }}/{{$taxonomy_term}}/{{$key}}">{{ .Page.Title }}</a></li>
+                        <!--
                             <ul>
                                 {{ range $value.Pages }}
                                     <li hugo-nav="{{ .RelPermalink}}">
@@ -14,6 +15,7 @@
                                     </li>
                                 {{ end }}
                             </ul>
+                        -->
                         {{ end }}
                     </ul>
                 </li>
