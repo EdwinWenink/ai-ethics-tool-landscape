@@ -1,8 +1,21 @@
 <div id="breadcrumbs">
     <a href="/">Home</a>
-    {{ range (split .RelPermalink "/") }}
+
+    <!-- Remove empty first and last element -->
+    {{ $url  := .RelPermalink }}
+    {{ $components := last 2 (split (delimit (split .RelPermalink "/") "," "") "," ) }}
+    {{ $counter := 0 }}
+
+    {{ range $components }}
+        {{ $counter = add $counter 1 }}
+        <!-- Following line is strictly not necessary anymore
+            because I filter out the empty elements above -->
         {{ if gt (len . ) 0 }}
-            > <a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a>
+            {{ if eq $counter (len $components) }}
+                > <a href="{{ $url }}">{{ humanize . }}</a>
+            {{ else }}
+                > <a href="/{{ . }}">{{ humanize . }}</a>
+            {{ end }}
         {{ end }}
     {{ end }}
     | <a href="{{ .Site.BaseURL }}/taxonomy">Taxonomy</a>
