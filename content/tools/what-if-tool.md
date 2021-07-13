@@ -6,7 +6,7 @@ fairness: ['individual', 'group']
 categories: ['model-agnostic']
 tasks: ['classification', 'regression']
 data: ['tabular', 'image', 'text']
-stages: []
+stages: ['post-processing']
 licence: 'Apache'
 repo: https://github.com/pair-code/what-if-tool
 languages: ['Python']

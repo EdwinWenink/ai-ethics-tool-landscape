@@ -5,7 +5,7 @@ explanations: ['contrastive']
 categories: ['model-agnostic']
 tasks: ['classification']
 data: ['image'] 
-stages: ['post-hoc'] 
+stages: ['post-processing'] 
 licence: 'Apache License 2.0'
 repo: https://github.com/IBM/Contrastive-Explanation-Method
 languages: ['Python']

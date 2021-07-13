@@ -3,7 +3,7 @@ title: 'InterpretML'
 values: ['explainability']
 explanations: ['white box', 'Shapley value', 'partial dependence plot', 'sensitivity analysis']
 categories: ['model-agnostic', 'model-specific']
-stages: ['learning', 'post-hoc']
+stages: ['in-processing', 'post-processing']
 licence: 'MIT'
 repo: https://github.com/interpretml/interpret
 languages: ['Python']

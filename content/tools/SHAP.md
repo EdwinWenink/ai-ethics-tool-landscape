@@ -5,7 +5,7 @@ explanations: ['local surrogate', 'Shapley value', 'gradient-based', 'partial de
 categories: ['model-agnostic', 'model-specific']
 tasks: ['classification', 'regression']
 data: ['tabular', 'image', 'text']
-stages: ['post-hoc']
+stages: ['post-processing']
 licence: 'MIT'
 repo: https://github.com/slundberg/shap
 languages: ['Python']

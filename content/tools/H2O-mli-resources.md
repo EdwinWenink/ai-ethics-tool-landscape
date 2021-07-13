@@ -6,7 +6,7 @@ fairness: []
 categories: ['model-agnostic']
 tasks: ['classification']
 data: ['tabular']
-stages: ['learning', 'post-hoc']
+stages: ['in-processing', 'post-processing']
 repo: 'https://github.com/h2oai/mli-resources'
 languages: ['Python']
 references: 

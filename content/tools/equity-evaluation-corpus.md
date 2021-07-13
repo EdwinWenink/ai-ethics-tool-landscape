@@ -5,7 +5,7 @@ fairness: ['group fairness']
 categories: ['model-agnostic']
 data: ['text']
 tasks: ['NLP']
-stages: ['evaluation']
+stages: ['post-processing']
 references: 
 - 
     name: 'Biases in Sentiment Analysis Systems'

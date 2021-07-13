@@ -5,7 +5,7 @@ explanations: ['gradient-based', 'Shapley value']
 categories: ['model-specific']
 tasks: ['classification', 'segmentation', 'regression']
 data: ['tabular', 'image']
-stages: ['prediction', 'post-hoc']
+stages: ['in-processing', 'post-processing']
 licence: 'BSD-3'
 repo: https://github.com/pytorch/captum
 languages: ['Python']

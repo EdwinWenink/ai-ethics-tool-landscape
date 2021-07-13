@@ -5,7 +5,7 @@ explanations: ['white box', 'gradient-based', 'local surrogate', 'perturbation']
 categories: ['model-specific', 'model-agnostic']
 tasks: ['classification', 'NLP']
 data: ['tabular', 'text', 'image']
-stages: ['prediction', 'post-hoc']
+stages: ['in-processing', 'post-processing']
 licence: 'MIT'
 repo: https://github.com/TeamHG-Memex/eli5
 languages: ['Python']

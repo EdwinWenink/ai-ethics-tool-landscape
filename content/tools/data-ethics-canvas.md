@@ -2,7 +2,7 @@
 title: 'Data Ethics Canvas'
 values: ['privacy', 'fairness', 'explainability', 'accountability']
 categories: ['model-agnostic']
-stages: ['design phase', 'evaluation', 'post-hoc']
+stages: ['design phase', 'in-processing', 'post-processing']
 references: 
 - 
     name: 'Data Ethics Canvas'

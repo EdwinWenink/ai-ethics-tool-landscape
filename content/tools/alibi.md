@@ -5,7 +5,7 @@ explanations: ['global surrogate', 'local surrogate', 'example-based', 'Shapley 
 categories: ['model-specific', 'model-agnostic']
 tasks: ['classification', 'regression']
 data: ['image', 'text', 'tabular' ]
-stages: ['post-hoc']
+stages: ['post-processing']
 licence: 'Apache License 2.0'
 repo: 'https://github.com/SeldonIO/alibi'
 languages: ['Python']

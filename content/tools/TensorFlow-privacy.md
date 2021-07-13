@@ -4,7 +4,7 @@ values: ['privacy']
 categories: ['model-specific']
 tasks: ['classification', 'regression', 'NLP']
 data: ['image', 'tabular', 'text']
-stages: ['learning']
+stages: ['in-processing']
 licence: 'Apache License 2.0' 
 repo: https://github.com/tensorflow/privacy
 languages: ['Python']
@@ -17,7 +17,7 @@ references:
     url: 'https://blog.tensorflow.org/2019/03/introducing-tensorflow-privacy-learning.html'
 ---
 
-TensorFlow Privacy is a library that allows you to replace default TensorFlow optimizers with optimizers that allow {{< stage "learning" >}} with differential privacy, i.e. they implement forms of stochastic gradient descent (SGD) with differential privacy.
+TensorFlow Privacy is a library that allows you to replace default TensorFlow optimizers with optimizers that allow training with differential privacy, i.e. they implement forms of stochastic gradient descent (SGD) with differential privacy.
 
 Because large neural networks or other differentiable models have a very large learning capacity, it can happen that the model achieves high performance on uncommon training input by simply "memorizing" the training input.
 If the training data is sensitive, for example information about a specific user, this is undesired behavior that may leak private information.

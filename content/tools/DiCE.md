@@ -2,7 +2,7 @@
 title: 'DiCE: Diverse Counterfactual Explanations'
 values: ['explainability']
 categories: ['model-agnostic', 'model-specific']
-stages: ['post-hoc']
+stages: ['post-processing']
 licence: 'MIT'
 repo: https://github.com/interpretml/DiCE
 languages: ['Python']

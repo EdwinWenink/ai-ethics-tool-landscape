@@ -2,7 +2,7 @@
 title: 'Model cards for Model Reporting'
 values: ['accountability', 'fairness']
 categories: ['model-agnostic']
-stages: ['design phase', 'evaluation']
+stages: ['design phase', 'preprocessing', 'post-processing']
 references: 
 -
     name: 'Mitchell et al. - Model Cards for Model Reporting'

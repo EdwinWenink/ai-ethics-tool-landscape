@@ -3,7 +3,7 @@ title: 'LIME: Local Interpretable Model-agnostic Explanations'
 values: ['explainability']
 explanations: ['local surrogate']
 categories: ['model-agnostic']
-stages: ['post-hoc']
+stages: ['post-processing']
 licence: 'BSD 2-Clause "Simplified"'
 repo: https://github.com/marcotcr/lime
 languages: ['Python', 'R']

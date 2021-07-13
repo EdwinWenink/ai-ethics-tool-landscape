@@ -2,7 +2,7 @@
 title: 'ART: Adversial Robustness 360 Toolbox'
 values: ['security']
 categories: ['model-specific', 'model-agnostic']
-stages: ['preprocessing', 'learning', 'evaluation', 'prediction' , 'post-hoc']
+stages: ['preprocessing', 'in-processing', 'post-processing']
 licence: 'MIT'
 repo: https://github.com/Trusted-AI/adversarial-robustness-toolbox 
 languages: ['Python']

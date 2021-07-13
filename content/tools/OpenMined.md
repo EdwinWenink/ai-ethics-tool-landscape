@@ -4,7 +4,7 @@ values: ['privacy', 'security']
 categories: ['model-specific']
 tasks: ['classification', 'regression', 'NLP']
 data: ['tabular', 'image', 'text']
-stages: ['learning', 'prediction']
+stages: ['in-processing']
 licence: 'Apache License 2.0'
 repo: 'https://github.com/OpenMined'
 languages: ['Python']
