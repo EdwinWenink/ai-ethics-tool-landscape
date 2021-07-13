@@ -10,6 +10,7 @@ languages: ['Python']
 data: ['text']
 tasks: ['classification']
 models: ['sklearn', 'BERT', 'RNN']
+frameworks: ['scikit-learn']
 ---
 
 Interpret-Text is an extension of {{< tool "InterpretML" >}}, specifically for several text models.

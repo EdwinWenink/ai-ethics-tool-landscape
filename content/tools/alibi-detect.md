@@ -8,6 +8,7 @@ data: ['text', 'image', 'tabular', 'time series']
 stages: ['design phase']
 licence: 'Apache License 2.0'
 repo: https://github.com/SeldonIO/alibi-detect
+frameworks: ['TensorFlow', 'PyTorch']
 languages: ['Python']
 ---
 

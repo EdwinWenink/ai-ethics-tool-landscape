@@ -34,3 +34,4 @@ canonifyURLs = true
     fairness = "fairness"
     task = "tasks"
     data = "data"
+    framework = "frameworks"

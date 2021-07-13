@@ -9,7 +9,7 @@ stages: ['in-processing', 'post-processing']
 licence: 'MIT'
 repo: https://github.com/TeamHG-Memex/eli5
 languages: ['Python']
-references: 
+frameworks: ['scikit-learn', 'lightning', 'XGBoost', 'LightGBM', 'CatBoost']
 ---
 
 ELI5 provides model-specific support for models from `scikit-learn`, `lightning`, decision tree ensembles using the `xgboost`, `LightGBM`, `CatBoost` libraries.

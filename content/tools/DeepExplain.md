@@ -9,6 +9,7 @@ stages: ['post-processing']
 licence: 'MIT'
 repo: https://github.com/marcoancona/DeepExplain
 languages: ['Python']
+frameworks: ['TensorFlow', 'Keras']
 references: 
 - 
     name: 'Simonyan et al. - Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps'

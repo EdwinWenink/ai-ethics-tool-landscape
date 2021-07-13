@@ -8,6 +8,7 @@ stages: ['in-processing']
 licence: 'Apache License 2.0'
 repo: 'https://github.com/OpenMined'
 languages: ['Python']
+frameworks: ['TensorFlow', 'Keras', 'PyTorch']
 references: 
 - 
     name: 'OpenMined'

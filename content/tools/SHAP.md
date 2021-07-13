@@ -9,6 +9,7 @@ stages: ['post-processing']
 licence: 'MIT'
 repo: https://github.com/slundberg/shap
 languages: ['Python']
+frameworks: ['TensorFlow', 'Keras', 'PyTorch', 'scikit-learn', 'XGBoost', 'LightGBM', 'CatBoost', 'PySpark']
 references: 
 - 
     name: 'Lundberg et al. 2017 - A Unified Approach to Interpreting Model Predictions'
@@ -60,7 +61,7 @@ from .explainers._additive import Additive as AdditiveExplainer
 
 ### Ensembles of trees
 
-There is specific support for tree (ensemble) models from `XGBoost`, `LightGBM`, `CatBoost`, `scikit-learn`, `pyspark`.
+There is specific support for tree (ensemble) models from `XGBoost`, `LightGBM`, `CatBoost`, `scikit-learn`, `PySpark`.
 These models can be passed directly into the `shap.Explainer`.
 This particular implementation can compute Shapley values exactly.
 
