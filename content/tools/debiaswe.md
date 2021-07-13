@@ -4,7 +4,7 @@ values: ['fairness']
 fairness: ['group fairness']
 categories: ['model-specific']
 data: ['text']
-stages: ['preprocessing', 'learning']
+stages: ['preprocessing', 'in-processing']
 tasks: ['NLP', 'clustering']
 licence: 'MIT'
 repo: https://github.com/tolga-b/debiaswe

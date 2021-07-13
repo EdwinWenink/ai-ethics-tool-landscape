@@ -1,4 +1,4 @@
 ---
-title: "design-phase"
+title: "Design phase"
 weight: 1
 ---

@@ -3,7 +3,7 @@ title: 'Interpret-Text'
 values: ['explainability']
 explanations: ['gradient-based', 'example-based']
 categories: ['model-specific']
-stages: ['learning', 'post-hoc']
+stages: ['in-processing', 'post-processing']
 licence: 'MIT'
 repo: https://github.com/interpretml/interpret-text
 languages: ['Python']

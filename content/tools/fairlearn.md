@@ -5,7 +5,7 @@ fairness: ['group fairness']
 categories: ['model-agnostic']
 tasks: ['classification', 'regression']
 data: ['tabular']
-stages: ['preprocessing', 'learning', 'post-hoc']
+stages: ['preprocessing', 'in-processing', 'post-processing']
 licence: MIT
 repo: https://github.com/fairlearn/fairlearn
 languages: ['Python']
@@ -36,7 +36,7 @@ Fairlearn contains two main components:
 
 `Fairlearn` contains two *reduction algorithms* that incorporate fairness constraints into a (binary) classification  or regression problem by reducing the problem into a sequence of weighted classification or regression problems. 
 The only requirement of the `fairlearn` implementation is that the base estimator has a `fit` and `predict` call, so for example all your typical `sklearn` estimators are compatible.
-This is applied in the {{< stage "learning" >}} stage.
+This is applied in the {{< stage "in-processing" >}} stage.
 Note that currently multi-class classification is not supported!
 
 An interesting difference with a typical predict function is that sometimes *randomized* predictions are used:
@@ -46,10 +46,10 @@ An interesting difference with a typical predict function is that sometimes *ran
 `Fairlearn` also contains a {{< stage "preprocessing" >}} algorithm to remove correlation of non-sensitive features with sensitive features.
 This addresses the potential issue that a machine learning model makes inferences based on sensitive features, even when these features are not explicitly included in the data, by instead using highly correlated features that were not considered to be sensitive on their own.
 
-`Fairlearn` also contains a postprocessing algorithm ({{< stage "post-hoc" >}}) that takes (possibly biased) model output and then fits a monotone transformation such that a chosen parity constraint is still satisfied.
+`Fairlearn` also contains a {{< stage "post-processing" >}}  algorithm that takes (possibly biased) model output and then fits a monotone transformation such that a chosen parity constraint is still satisfied.
 
 All these methods are thus {{< category "model-agnostic" >}}.
-Note that being model-agnostic does not necessarily imply that the methods are also {{< stage "post-hoc" >}}, even though this generally does hold in the case of {{< value "explainability" >}}.
+Note that being model-agnostic does not necessarily imply that the methods are also {{< stage "post-processing" >}}, even though this generally does hold in the case of {{< value "explainability" >}}.
 
 ## Fairness definitions / Parity constraints
 

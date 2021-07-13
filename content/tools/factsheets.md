@@ -2,7 +2,7 @@
 title: "FactSheets: Increasing Trust in AI Services through Supplier's Declaration of Conformity"
 values: ['accountability']
 categories: ['model-agnostic']
-stages: ['post-hoc']
+stages: ['post-processing']
 references: 
 - 
     name: "Arnold et al. - FactSheets: Increasing Trust in AI Services through Supplier's Declaration of Conformity"

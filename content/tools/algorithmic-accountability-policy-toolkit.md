@@ -2,7 +2,7 @@
 title: 'Algorithmic Accountability Policy Toolkit'
 values: ['accountability']
 categories: ['model-agnostic']
-stages: ['post-hoc']
+stages: ['post-processing']
 references: 
 - 
     name: 'Download the toolkit'

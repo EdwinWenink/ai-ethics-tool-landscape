@@ -5,7 +5,7 @@ explanations: ['gradient-based']
 categories: ['model-specific']
 tasks: ['classification', 'segmentation' ]
 data: ['image', 'text']
-stages: ['prediction', 'post-hoc']
+stages: ['in-processing', 'post-processing']
 licence: MIT
 repo: 'https://github.com/kundajelab/deeplift'
 language: ['Python']

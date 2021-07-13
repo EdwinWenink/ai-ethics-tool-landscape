@@ -5,7 +5,7 @@ fairness: ['group fairness', 'individual fairness']
 categories: ['model-agnostic']
 tasks: ['classification', 'regression']
 data: ['tabular']
-stages: ['preprocessing',  'learning', 'post-hoc']
+stages: ['preprocessing', 'in-processing', 'Post-processing']
 licence: 'Apache license'
 repo: https://github.com/Trusted-AI/AIF360
 languages: ['Python', 'R']
@@ -45,7 +45,7 @@ The [ClassificationMetric](https://aif360.readthedocs.io/en/latest/modules/gener
 
 The metrics under `(BinaryLabel)DatasetMetric` apply to the training data and are thus relevant for the {{< stage "preprocessing" >}} stage.
 
-The metrics under `ClassificationMetric` apply to the models themselves and are thus relevant during the {{< stage "learning" >}} stage.
+The metrics under `ClassificationMetric` apply to the models themselves and are thus relevant during the {{< stage "in-processing" >}} stage.
 
 ### Worldviews
 
@@ -70,7 +70,7 @@ Some metrics are not specific to a particular worldview, such as metrics based o
 ## Choosing algorithms
 
 The API nicely lists algorithms by the stage they are applicable in.
-The algorithms that affect the {{< stage "learning" >}} stage, or "in-processing" stage as this toolkit calls it, are mostly suitable for classification.
+The algorithms that affect the {{< stage "in-processing" >}} stage are mostly suitable for classification.
 However, a reduction-based approach such as [GridSearchReduction]( https://aif360.readthedocs.io/en/latest/modules/generated/aif360.algorithms.inprocessing.GridSearchReduction.html#aif360.algorithms.inprocessing.GridSearchReduction) can also be used for regression.
 
 ### Preprocessing
@@ -86,7 +86,7 @@ Relevant remarks from the guidance material on the preprocessing algorithms:
 
 ### In-processing
 
-For algorithms for fair {{< stage "learning" >}}, see [aif360.algorithms.inprocessing](https://aif360.readthedocs.io/en/latest/modules/algorithms.html#module-aif360.algorithms.inprocessing).
+For algorithms for fair learning see [aif360.algorithms.inprocessing](https://aif360.readthedocs.io/en/latest/modules/algorithms.html#module-aif360.algorithms.inprocessing).
 
 Relevant remarks from the guidance material on the "in-processing" algorithms:
 
@@ -94,7 +94,7 @@ Relevant remarks from the guidance material on the "in-processing" algorithms:
 
 ### Post-processing
 
-For {{< stage "post-hoc" >}} algorithms, see [aif360.algorithms.postprocessing](https://aif360.readthedocs.io/en/latest/modules/algorithms.html#module-aif360.algorithms.postprocessing).
+For {{< stage "post-processing" >}} algorithms, see [aif360.algorithms.postprocessing](https://aif360.readthedocs.io/en/latest/modules/algorithms.html#module-aif360.algorithms.postprocessing).
 
 Relevant remarks from the guidance material on the "post-processing" algorithms:
 

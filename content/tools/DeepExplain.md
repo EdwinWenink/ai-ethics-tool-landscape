@@ -5,7 +5,7 @@ explanations: ['gradient-based', 'perturbation', 'Shapley value']
 categories: ['model-specific']
 tasks: ['classification', 'segmentation']
 data: ['image', 'text']
-stages: ['post-hoc']
+stages: ['post-processing']
 licence: 'MIT'
 repo: https://github.com/marcoancona/DeepExplain
 languages: ['Python']

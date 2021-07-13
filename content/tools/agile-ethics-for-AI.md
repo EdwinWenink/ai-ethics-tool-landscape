@@ -2,7 +2,7 @@
 title: 'Agile Ethics for AI'
 values: ['explainability', 'fairness', 'accountability', 'privacy']
 categories: ['model-agnostic']
-stages: ['design phase', 'preprocessing', 'learning', 'evaluation', 'prediction','post-hoc']
+stages: ['design phase', 'preprocessing', 'in-processing', 'post-processing']
 references: 
 - 
     name: 'Agile Ethics for AI Trello Board '

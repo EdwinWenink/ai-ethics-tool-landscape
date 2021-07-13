@@ -5,7 +5,7 @@ fairness: ['group fairness']
 categories: ['model-agnostic']
 tasks: ['classification']
 data: ['tabular']
-stages: ['preprocessing', 'post-hoc']
+stages: ['preprocessing', 'post-processing']
 licence: 'MIT'
 repo: https://github.com/dssg/aequitas
 languages: ['Python']

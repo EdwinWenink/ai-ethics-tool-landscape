@@ -47,7 +47,7 @@
     {{ with (.Site.GetPage (printf "/%s" $taxonomy_name)) }}					
         {{ range .Pages.ByWeight }}
             {{ $name := .Title }}
-            <li><a href="{{ .RelPermalink }}">{{ $name }} ({{ (index $tax $name).Count }})</a></li>
+            <li><a href="{{ .RelPermalink }}">{{ $name }} ({{ (index $tax (urlize (lower $name))).Count }})</a></li>
         {{ end }}	
     {{ end }}
     </ol>
