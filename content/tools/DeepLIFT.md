@@ -9,6 +9,7 @@ stages: ['in-processing', 'post-processing']
 licence: MIT
 repo: 'https://github.com/kundajelab/deeplift'
 language: ['Python']
+frameworks: ['TensorFlow', 'Keras']
 references: 
 - 
     name: 'Shrikumar et al. - Learning Important Features Through Propagating Activation Differences'

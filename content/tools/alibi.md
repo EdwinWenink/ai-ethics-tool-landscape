@@ -8,6 +8,7 @@ data: ['image', 'text', 'tabular' ]
 stages: ['post-processing']
 licence: 'Apache License 2.0'
 repo: 'https://github.com/SeldonIO/alibi'
+frameworks: ['Keras']
 languages: ['Python']
 ---
 

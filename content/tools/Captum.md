@@ -9,6 +9,7 @@ stages: ['in-processing', 'post-processing']
 licence: 'BSD-3'
 repo: https://github.com/pytorch/captum
 languages: ['Python']
+frameworks: ['PyTorch']
 references: 
 - 
     name:  'captum.ai'

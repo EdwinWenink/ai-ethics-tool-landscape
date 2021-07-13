@@ -9,6 +9,7 @@ stages: ['preprocessing', 'in-processing', 'post-processing']
 licence: MIT
 repo: https://github.com/fairlearn/fairlearn
 languages: ['Python']
+frameworks: ['scikit-learn']
 references: 
 - 
     name: 'Agarwal et al. - Fair Regression: Quantitative Definitions and Reduction-based Algorithms'

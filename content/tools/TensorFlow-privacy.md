@@ -8,6 +8,7 @@ stages: ['in-processing']
 licence: 'Apache License 2.0' 
 repo: https://github.com/tensorflow/privacy
 languages: ['Python']
+frameworks: ['TensorFlow', 'Keras']
 references:
 -
     name: 'McMahan et al. - A General Approach to Adding Differential Privacy to Iterative Training Procedures'
