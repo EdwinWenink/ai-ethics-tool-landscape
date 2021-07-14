@@ -10,6 +10,7 @@ stages: ['design phase']
 licence: 'LICENSE'
 repo: https://example.org
 languages: ['Python']
+frameworks: []
 references: 
 - 
     name: 'Title'
