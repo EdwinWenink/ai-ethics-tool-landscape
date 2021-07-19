@@ -2,6 +2,7 @@
 title: 'Fairness in Classification'
 values: ['fairness']
 fairness: ['group fairness']
+categories: ['model-specific']
 tasks: ['classification']
 data: ['tabular']
 stages: ['in-processing']

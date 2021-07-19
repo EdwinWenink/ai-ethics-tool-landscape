@@ -3,9 +3,10 @@ title: 'XAI Toolbox'
 values: ['explainability', 'fairness']
 explanations: ['perturbation']
 fairness: ['group fairness']
+categories: ['model-agnostic']
 tasks: ['classification']
 data: ['tabular']
-stages: ['pre-processing', 'post-processing']
+stages: ['preprocessing', 'post-processing']
 licence: 'MIT'
 repo: https://github.com/EthicalML/xai
 languages: ['Python']
