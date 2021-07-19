@@ -5,7 +5,7 @@ explanations: ['perturbation']
 fairness: ['group fairness']
 tasks: ['classification']
 data: ['tabular']
-stages: []
+stages: ['pre-processing', 'post-processing']
 licence: 'MIT'
 repo: https://github.com/EthicalML/xai
 languages: ['Python']
