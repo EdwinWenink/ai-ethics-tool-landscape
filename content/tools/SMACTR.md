@@ -80,7 +80,7 @@ implementation planning documents and retrospectives.
 The testing phase can be highly dependent on the specific usage context and the project.
 The paper discusses two [example artifacts](https://drive.google.com/drive/folders/1vMEBzexh8_3-0g2TxTBU8gejbaKHz8gq):
 
-- Report on adversial testing
+- Report on adversarial testing
 - Ethical risk analysis chart
 
 The goal of this phase is to test compliance with *prioritized* ethical values. 

@@ -14,7 +14,7 @@ references:
     url: 'https://arxiv.org/abs/1807.01069'
 ---
 
-The Adversial Robustness Toolbox (ART) is the first comprehensive toolbox that unifies many defensive techniques for four categories of adversial attacks on machine learning models.
+The Adversial Robustness Toolbox (ART) is the first comprehensive toolbox that unifies many defensive techniques for four categories of adversarial attacks on machine learning models.
 These categories are model evasion, model poisoning, model extraction and inference (e.g. inference of sensitive attributes in the training data; or determining whether an example was part of the training data).
 ART supports all popular machine learning frameworks, all data types and all machine learning tasks.
 
