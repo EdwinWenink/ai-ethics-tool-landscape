@@ -1,15 +1,61 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><link rel="shortcut icon" href=img/favicon.ico><title>Contrastive explanations</title><link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css><link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/contrastive/index.xml title="Ethical AI Tool Landscape"></head><body><header><div class=inline-block><a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a></div><nav><div id=breadcrumbs><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>Contrastive explanations</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+<link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/contrastive/index.xml title="Ethical AI Tool Landscape">
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations>Explanations</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/contrastive/>Contrastive</a>
-| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a></div></nav></header><main><div><h1 class=title>Contrastive explanations</h1><div><p>Human explanations are often contrastive, meaning that they do not answer the indeterminate &ldquo;Why?&rdquo; question, but instead &ldquo;Why P, rather than Q?&rdquo;.
-For example, when a mortgage application is denied, we are not interested in a very long list of tiny little details that all contributed to that decision, but we want a to-the-point explanation that shows us what we minimally have to change to get the mortgage.</p><p>For example, the
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<div>
+<h1 class=title>Contrastive explanations</h1>
+<div><p>Human explanations are often contrastive, meaning that they do not answer the indeterminate &ldquo;Why?&rdquo; question, but instead &ldquo;Why P, rather than Q?&rdquo;.
+For example, when a mortgage application is denied, we are not interested in a very long list of tiny little details that all contributed to that decision, but we want a to-the-point explanation that shows us what we minimally have to change to get the mortgage.</p>
+<p>For example, the
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/cem/>CEM</a>
 method supports such an explanation by finding the minimal set of features that lead to prediction P (so this looks like an
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/anchor/>anchor</a>
 explanation), and additionally a minimal set of features that should be absent to maintain decision P instead of the closest class Q (which is somewhat similar to a
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/counterfactual/>counterfactual</a>
-).</p></div></div><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi/>Alibi</a></h1><div>Alibi is an open-source Python library that supports various interpretability techniques and a broad array of explanation types. The README already provides an overview of the supported methods and when they are applicable. The following table with supported methods is copied from the README (slightly abbreviated):
+).</p>
+</div>
+</div>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi/>Alibi</a></h1>
+<div>
+Alibi is an open-source Python library that supports various interpretability techniques and a broad array of explanation types. The README already provides an overview of the supported methods and when they are applicable. The following table with supported methods is copied from the README (slightly abbreviated):
 Supported methods Method Models Explanations Classification Regression Tabular Text Images Categorical features ALE BB global ✔ ✔ ✔ Anchors BB local ✔ ✔ ✔ ✔ ✔ CEM BB* TF/Keras local ✔ ✔ ✔ Counterfactuals BB* TF/Keras local ✔ ✔ ✔ Prototype Counterfactuals BB* TF/Keras local ✔ ✔ ✔ ✔ Integrated Gradients TF/Keras local ✔ ✔ ✔ ✔ ✔ ✔ Kernel SHAP BB local global ✔ ✔ ✔ ✔ Tree SHAP WB local global ✔ ✔ ✔ ✔ The README also explains the keys:
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/cem/>Contrastive Explanation Method (CEM)</a></h1><div>Dhurandhar et al. support a type of contrastive explanation based on what they call pertinent negatives. A contrastive explanation answers the question: &ldquo;Why P, rather than Q&rdquo;?
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/cem/>Contrastive Explanation Method (CEM)</a></h1>
+<div>
+Dhurandhar et al. support a type of contrastive explanation based on what they call pertinent negatives. A contrastive explanation answers the question: &ldquo;Why P, rather than Q&rdquo;?
 CEM supports such an explanation by finding the minimal set of features that lead to prediction P (a pertinent positive that resembles an anchor explanation), and additionally a minimal set of features that should be absent to maintain decision P instead of the decision for closest class Q (a pertinent negative that is somewhat similar to a counterfactual ).
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/cem/>Read more...</a></div></article></main><footer><p>Last modified on 30-06-2021.</p><p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p></footer></body></html>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/cem/>Read more...</a>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 30-06-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

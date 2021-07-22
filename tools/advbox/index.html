@@ -1,0 +1,71 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>AdvBox</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools>Tools</a>
+> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/advbox/>Advbox</a>
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<article>
+<h1 class=title>AdvBox</h1>
+<div>
+<ul>
+<li id=values> Values: {
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/security>security</a>
+}
+</li>
+<li id=categories> Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-specific>model-specific</a> } </li>
+<li id=design-phase> Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/post-processing>post-processing</a> }</li>
+<li id=repository> Repository: <a href=https://github.com/advboxes/AdvBox/blob/master/adversarialbox.md target=_blank>https://github.com/advboxes/AdvBox/blob/master/adversarialbox.md</a></li>
+<li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> }</li>
+<li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/image>image</a> }</li>
+<li id=licence> Licence: Apache License 2.0</li>
+<li id=languages> Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li>
+<li id=framework> Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/paddlepaddle>PaddlePaddle</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/pytorch>PyTorch</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/caffe2>Caffe2</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/mxnet>MxNet</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/keras>Keras</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/tensorflow>TensorFlow</a> }</li>
+<li id=references>References:
+<ul>
+<li><a href=https://github.com/advboxes/AdvBox/blob/master/adversarialbox.md target=_blank>Adversial Box Homepage</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr>
+<div>
+<p><code>Advbox</code> offers a number of AI model security toolkits.
+<a href=https://github.com/advboxes/AdvBox/tree/master/adversarialbox><code>AdversialBox</code></a> allows zero-coding generation of adversial examples for a wide range of neural network frameworks.
+An overview of the supported attacks and defenses can be found <a href=https://github.com/advboxes/AdvBox/blob/master/adversarialbox.md#supported-attack-and-defense-methods>here</a> and the corresponding code <a href=https://github.com/advboxes/AdvBox/tree/master/adversarialbox>here</a>.
+It requires some effort to find all attacks mentioned on the homepage in the code base.</p>
+<p>Generally speaking, the documentation of <code>AdvBox</code> is incomplete and not very user-friendly.
+<a href=https://github.com/advboxes/AdvBox/tree/master/advbox_family/ODD><code>ODD: Object Detector Deception</code></a> showcases a specific attack for object detection networks such as YOLO, but is not mentioned in the README.
+<code>AdvDetect</code> <em>is</em> named in the README, but it&rsquo;s not clear if and how it differs from <code>ODD</code>.
+The &ldquo;homepage&rdquo; for <code>AdvDetect</code> is an empty markdown file at the moment of writing.
+<a href=https://github.com/advboxes/AdvBox/tree/master/DataPoison><code>AdvPoison</code></a> contains an example of a data poisoning attack for MNIST, implemented in Paddle and PyTorch.</p>
+<p>The repository does contain a <a href=https://github.com/advboxes/AdvBox/tree/master/tutorials>wide range of tutorials</a>.</p>
+<p>This library is said to be based on
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/foolbox/>Foolbox</a>
+, which is more comprehensive and has proper documentation.</p>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 22-07-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

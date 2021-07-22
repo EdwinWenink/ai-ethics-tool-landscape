@@ -1,12 +1,121 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><link rel="shortcut icon" href=img/favicon.ico><title>Data Nutrition Label</title><link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css></head><body><header><div class=inline-block><a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a></div><nav><div id=breadcrumbs><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>Data Nutrition Label</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools>Tools</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/data-nutrition-label/>Data nutrition label</a>
-| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a></div></nav></header><main><article><h1 class=title>Data Nutrition Label</h1><div><ul><li id=values>Values: {
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<article>
+<h1 class=title>Data Nutrition Label</h1>
+<div>
+<ul>
+<li id=values> Values: {
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/accountability>accountability</a>
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/fairness>fairness</a>
-}</li><li id=categories>Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-agnostic>model-agnostic</a> }</li><li id=design-phase>Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/design-phase>design phase</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/preprocessing>preprocessing</a> }</li><li id=references>References:<ul><li><a href=https://datanutrition.org/ target=_blank>Data Nutrition Project</a></li></ul><ul><li><a href=https://arxiv.org/abs/1805.03677 target=_blank>Holland et al. - The Dataset Nutrition Label: A Framework To Drive Higher Data Quality Standards</a></li></ul><ul><li><a href=https://ahmedhosny.github.io/datanutrition/ target=_blank>Data Nutrition Label Demo</a></li></ul></li></ul></div><hr><div><p>In analogy with nutrition labels on food products, the authors of this paper propose a way to create a Data Nutrition Label.
-The goal of this method is to asses data quality and mitigate potential problems early on <em>before</em> building models on the data.</p><p>According to the authors, their approach is different from the
+}
+</li>
+<li id=categories> Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-agnostic>model-agnostic</a> } </li>
+<li id=design-phase> Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/design-phase>design phase</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/preprocessing>preprocessing</a> }</li>
+<li id=references>References:
+<ul>
+<li><a href=https://datanutrition.org/ target=_blank>Data Nutrition Project</a></li>
+</ul>
+<ul>
+<li><a href=https://arxiv.org/abs/1805.03677 target=_blank>Holland et al. - The Dataset Nutrition Label: A Framework To Drive Higher Data Quality Standards</a></li>
+</ul>
+<ul>
+<li><a href=https://ahmedhosny.github.io/datanutrition/ target=_blank>Data Nutrition Label Demo</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr>
+<div>
+<p>In analogy with nutrition labels on food products, the authors of this paper propose a way to create a Data Nutrition Label.
+The goal of this method is to asses data quality and mitigate potential problems early on <em>before</em> building models on the data.</p>
+<p>According to the authors, their approach is different from the
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/datasheet/>datasheet</a>
 in that the &ldquo;proposed datasheet [i.e. by Gebru et al.] includes dataset provenance, key characteristics, relevant regulations and test results, but also significant yet more subjective information such as potential bias, strengths and weaknesses of the dataset, API, or model, and suggested uses.&rdquo; (5)
-The Data Nutrition Label instead relies more on computational tools and statistics.</p><p>A practical guide is provided as a <a href=https://ahmedhosny.github.io/datanutrition/>demo</a>.
-A brief summary of the goals and component modules are provided below.</p><h2 id=goals>Goals</h2><p>The goals of the Dataset Nutrition Label are:</p><blockquote><p>Three goals drive this work. First, to inform and improve data specialists' selection and interrogation of datasets and to prompt critical analysis. Consequently, data specialists are the primary intended audience. Second, to gain traction as a practical, readily deployable tool, we prioritize efficiency and flexibility. To that end, we do not suggest one specific approach to the Label, or charge one specific community with creating the Label. Rather, our prototype is modular, and the underlying framework is one that anyone can use. Lastly, we leverage probabilistic computing tools to surface potential corollaries, anomalies, and proxies. This is particularly beneficial because resolving these issues requires excess development time, and can lead to undesired correlations in trained models. (p. 5)</p></blockquote><h2 id=modules>Modules</h2><p>See p. 7 of the linked paper for the following table:</p><table><thead><tr><th>Module Name</th><th>Description</th><th>Contents</th></tr></thead><tbody><tr><td>Metadata</td><td>Meta information. This module is the only required module. It represents the absolute minimum information to be represented.</td><td>Filename, file format, URL, domain keywords, type, dataset size, % of missing cells, license, release data, collection range, description</td></tr><tr><td>Provenance</td><td>Information regarding the origin and lineage of the dataset</td><td>Source and author contact information with version history</td></tr><tr><td>Variables</td><td>Descriptions of each variable (column) in the dataset</td><td>Textual descriptions</td></tr><tr><td>Statistics</td><td>Simple statistics for all variables, in addition to stratifications into ordinal, nominal, continuous and discrete</td><td>Least/most frequent entries, min/max, median, mean, etc.</td></tr><tr><td>Pair Plots</td><td>Distributions and linear correlations between two chosen variables</td><td>Histograms and heatmaps</td></tr><tr><td>Probabilistic Model</td><td>Synthetic data generated using distribution hypotheses from which the data was drawn - leverages a probabilistic programming backend</td><td>Histograms and other statistical plots</td></tr><tr><td>Ground Truth Correlations</td><td>Linear correlations between a chosen variable in the dataset and variables from other datasets considered to be &ldquo;ground truth&rdquo;, such as Census Data</td><td>Heatmaps</td></tr></tbody></table><p>For more details and justification of these modules, refer to the accompanying paper.</p></div></article></main><footer><p>Last modified on 24-06-2021.</p><p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p></footer></body></html>
+The Data Nutrition Label instead relies more on computational tools and statistics.</p>
+<p>A practical guide is provided as a <a href=https://ahmedhosny.github.io/datanutrition/>demo</a>.
+A brief summary of the goals and component modules are provided below.</p>
+<h2 id=goals>Goals</h2>
+<p>The goals of the Dataset Nutrition Label are:</p>
+<blockquote>
+<p>Three goals drive this work. First, to inform and improve data specialists' selection and interrogation of datasets and to prompt critical analysis. Consequently, data specialists are the primary intended audience. Second, to gain traction as a practical, readily deployable tool, we prioritize efficiency and flexibility. To that end, we do not suggest one specific approach to the Label, or charge one specific community with creating the Label. Rather, our prototype is modular, and the underlying framework is one that anyone can use. Lastly, we leverage probabilistic computing tools to surface potential corollaries, anomalies, and proxies. This is particularly beneficial because resolving these issues requires excess development time, and can lead to undesired correlations in trained models. (p. 5)</p>
+</blockquote>
+<h2 id=modules>Modules</h2>
+<p>See p. 7 of the linked paper for the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Module Name</th>
+<th>Description</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Metadata</td>
+<td>Meta information. This module is the only required module. It represents the absolute minimum information to be represented.</td>
+<td>Filename, file format, URL, domain keywords, type, dataset size, % of missing cells, license, release data, collection range, description</td>
+</tr>
+<tr>
+<td>Provenance</td>
+<td>Information regarding the origin and lineage of the dataset</td>
+<td>Source and author contact information with version history</td>
+</tr>
+<tr>
+<td>Variables</td>
+<td>Descriptions of each variable (column) in the dataset</td>
+<td>Textual descriptions</td>
+</tr>
+<tr>
+<td>Statistics</td>
+<td>Simple statistics for all variables, in addition to stratifications into ordinal, nominal, continuous and discrete</td>
+<td>Least/most frequent entries, min/max, median, mean, etc.</td>
+</tr>
+<tr>
+<td>Pair Plots</td>
+<td>Distributions and linear correlations between two chosen variables</td>
+<td>Histograms and heatmaps</td>
+</tr>
+<tr>
+<td>Probabilistic Model</td>
+<td>Synthetic data generated using distribution hypotheses from which the data was drawn - leverages a probabilistic programming backend</td>
+<td>Histograms and other statistical plots</td>
+</tr>
+<tr>
+<td>Ground Truth Correlations</td>
+<td>Linear correlations between a chosen variable in the dataset and variables from other datasets considered to be &ldquo;ground truth&rdquo;, such as Census Data</td>
+<td>Heatmaps</td>
+</tr>
+</tbody>
+</table>
+<p>For more details and justification of these modules, refer to the accompanying paper.</p>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 24-06-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

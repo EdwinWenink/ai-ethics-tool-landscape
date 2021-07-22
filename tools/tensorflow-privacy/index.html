@@ -1,12 +1,71 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><link rel="shortcut icon" href=img/favicon.ico><title>TensorFlow Privacy</title><link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css></head><body><header><div class=inline-block><a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a></div><nav><div id=breadcrumbs><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>TensorFlow Privacy</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools>Tools</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/tensorflow-privacy/>Tensorflow privacy</a>
-| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a></div></nav></header><main><article><h1 class=title>TensorFlow Privacy</h1><div><ul><li id=values>Values: {
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<article>
+<h1 class=title>TensorFlow Privacy</h1>
+<div>
+<ul>
+<li id=values> Values: {
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/privacy>privacy</a>
-}</li><li id=categories>Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-specific>model-specific</a> }</li><li id=design-phase>Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> }</li><li id=repository>Repository: <a href=https://github.com/tensorflow/privacy target=_blank>https://github.com/tensorflow/privacy</a></li><li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/regression>regression</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/nlp>NLP</a> }</li><li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/image>image</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/tabular>tabular</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/text>text</a> }</li><li id=licence>Licence: Apache License 2.0</li><li id=languages>Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li><li id=framework>Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/tensorflow>TensorFlow</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/keras>Keras</a> }</li><li id=references>References:<ul><li><a href=https://arxiv.org/abs/1812.06210 target=_blank>McMahan et al. - A General Approach to Adding Differential Privacy to Iterative Training Procedures</a></li></ul><ul><li><a href=https://blog.tensorflow.org/2019/03/introducing-tensorflow-privacy-learning.html target=_blank>Introducing TensorFlow Privacy: Learning with Differential Privacy for Training Data</a></li></ul></li></ul></div><hr><div><p>TensorFlow Privacy is a library that allows you to replace default TensorFlow optimizers with optimizers that allow training with differential privacy, i.e. they implement forms of stochastic gradient descent (SGD) with differential privacy.</p><p>Because large neural networks or other differentiable models have a very large learning capacity, it can happen that the model achieves high performance on uncommon training input by simply &ldquo;memorizing&rdquo; the training input.
+}
+</li>
+<li id=categories> Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-specific>model-specific</a> } </li>
+<li id=design-phase> Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> }</li>
+<li id=repository> Repository: <a href=https://github.com/tensorflow/privacy target=_blank>https://github.com/tensorflow/privacy</a></li>
+<li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/regression>regression</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/nlp>NLP</a> }</li>
+<li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/image>image</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/tabular>tabular</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/text>text</a> }</li>
+<li id=licence> Licence: Apache License 2.0</li>
+<li id=languages> Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li>
+<li id=framework> Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/tensorflow>TensorFlow</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/keras>Keras</a> }</li>
+<li id=references>References:
+<ul>
+<li><a href=https://arxiv.org/abs/1812.06210 target=_blank>McMahan et al. - A General Approach to Adding Differential Privacy to Iterative Training Procedures</a></li>
+</ul>
+<ul>
+<li><a href=https://blog.tensorflow.org/2019/03/introducing-tensorflow-privacy-learning.html target=_blank>Introducing TensorFlow Privacy: Learning with Differential Privacy for Training Data</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr>
+<div>
+<p>TensorFlow Privacy is a library that allows you to replace default TensorFlow optimizers with optimizers that allow training with differential privacy, i.e. they implement forms of stochastic gradient descent (SGD) with differential privacy.</p>
+<p>Because large neural networks or other differentiable models have a very large learning capacity, it can happen that the model achieves high performance on uncommon training input by simply &ldquo;memorizing&rdquo; the training input.
 If the training data is sensitive, for example information about a specific user, this is undesired behavior that may leak private information.
 The optimizers of TensorFlow Privacy address this issue and additionally provide analysis tools to mathematically determine privacy guarantees.
-Notes on <a href=https://github.com/tensorflow/privacy/tree/aster/tutorials#measuring-privacy>&ldquo;measuring&rdquo; privacy</a> in TensorFlow Privacy can be found <a href=https://github.com/tensorflow/privacy/tree/aster/tutorials#measuring-privacy>here</a>.</p><p>Because this library focuses on optimizers, it is possible to get started with TensorFlow Privacy by just dropping in the modified optimizers in existing TensorFlow code.
+Notes on <a href=https://github.com/tensorflow/privacy/tree/aster/tutorials#measuring-privacy>&ldquo;measuring&rdquo; privacy</a> in TensorFlow Privacy can be found <a href=https://github.com/tensorflow/privacy/tree/aster/tutorials#measuring-privacy>here</a>.</p>
+<p>Because this library focuses on optimizers, it is possible to get started with TensorFlow Privacy by just dropping in the modified optimizers in existing TensorFlow code.
 At the moment of writing, it seems that detailed documentation on the API is not published yet, so you have to dive into the doc strings in the code.
-The supported optimizers can be found <a href=https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/optimizers>here</a>.</p><p>The referenced paper is a technical white paper explaining the foundations of Tensorflow Privacy.
-TensorFlow Privacy works with TensorFlow 2</p></div></article></main><footer><p>Last modified on 13-07-2021.</p><p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p></footer></body></html>
+The supported optimizers can be found <a href=https://github.com/tensorflow/privacy/tree/master/tensorflow_privacy/privacy/optimizers>here</a>.</p>
+<p>The referenced paper is a technical white paper explaining the foundations of Tensorflow Privacy.
+TensorFlow Privacy works with TensorFlow 2</p>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 13-07-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

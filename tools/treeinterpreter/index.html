@@ -1,8 +1,65 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><link rel="shortcut icon" href=img/favicon.ico><title>TreeInterpreter</title><link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css></head><body><header><div class=inline-block><a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a></div><nav><div id=breadcrumbs><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>TreeInterpreter</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools>Tools</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/treeinterpreter/>Treeinterpreter</a>
-| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a></div></nav></header><main><article><h1 class=title>TreeInterpreter</h1><div><ul><li id=values>Values: {
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<article>
+<h1 class=title>TreeInterpreter</h1>
+<div>
+<ul>
+<li id=values> Values: {
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/explainability>explainability</a>
-}<ul><li>Explanation type: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/white-box>white box</a> }</li></ul></li><li id=categories>Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-specific>model-specific</a> }</li><li id=design-phase>Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> }</li><li id=repository>Repository: <a href=https://github.com/andosa/treeinterpreter target=_blank>https://github.com/andosa/treeinterpreter</a></li><li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/regression>regression</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> }</li><li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/tabular>tabular</a> }</li><li id=licence>Licence: BSD-3</li><li id=languages>Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li><li id=framework>Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/scikit-learn>scikit-learn</a> }</li><li id=references>References:<ul><li><a href=http://blog.datadive.net/random-forest-interpretation-with-scikit-learn/ target=_blank>Demo and explanation</a></li></ul></li></ul></div><hr><div><p>This library provides a separate <code>predict()</code> function for <code>scikit-learn</code> tree-based models (so also ensembles) that outputs a prediction with interpretable elements of the shape <code>prediction = bias + feature_1_contribution + ... + feature_n_contribution</code>.</p><p>That is, it turns these tree-based models into a
+}
+<ul>
+<li>Explanation type: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/white-box>white box</a> }</li>
+</ul>
+</li>
+<li id=categories> Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-specific>model-specific</a> } </li>
+<li id=design-phase> Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> }</li>
+<li id=repository> Repository: <a href=https://github.com/andosa/treeinterpreter target=_blank>https://github.com/andosa/treeinterpreter</a></li>
+<li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/regression>regression</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> }</li>
+<li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/tabular>tabular</a> }</li>
+<li id=licence> Licence: BSD-3</li>
+<li id=languages> Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li>
+<li id=framework> Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/scikit-learn>scikit-learn</a> }</li>
+<li id=references>References:
+<ul>
+<li><a href=http://blog.datadive.net/random-forest-interpretation-with-scikit-learn/ target=_blank>Demo and explanation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr>
+<div>
+<p>This library provides a separate <code>predict()</code> function for <code>scikit-learn</code> tree-based models (so also ensembles) that outputs a prediction with interpretable elements of the shape <code>prediction = bias + feature_1_contribution + ... + feature_n_contribution</code>.</p>
+<p>That is, it turns these tree-based models into a
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/white-box/>white box</a>
-, where we can inspect how much each feature contributes to the predicted value (in the case of regression) or how much it contributes to the estimated probability of a class (given classification).</p></div></article></main><footer><p>Last modified on 19-07-2021.</p><p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p></footer></body></html>
+, where we can inspect how much each feature contributes to the predicted value (in the case of regression) or how much it contributes to the estimated probability of a class (given classification).</p>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 19-07-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

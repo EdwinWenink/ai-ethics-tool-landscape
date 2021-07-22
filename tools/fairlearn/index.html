@@ -1,26 +1,128 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><link rel="shortcut icon" href=img/favicon.ico><title>Fairlearn</title><link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css></head><body><header><div class=inline-block><a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a></div><nav><div id=breadcrumbs><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>Fairlearn</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools>Tools</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/fairlearn/>Fairlearn</a>
-| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a></div></nav></header><main><article><h1 class=title>Fairlearn</h1><div><ul><li id=values>Values: {
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<article>
+<h1 class=title>Fairlearn</h1>
+<div>
+<ul>
+<li id=values> Values: {
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/fairness>fairness</a>
-}<ul><li>Fairness type: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/fairness/group-fairness>group fairness</a> }</li></ul></li><li id=categories>Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-agnostic>model-agnostic</a> }</li><li id=design-phase>Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/preprocessing>preprocessing</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/post-processing>post-processing</a> }</li><li id=repository>Repository: <a href=https://github.com/fairlearn/fairlearn target=_blank>https://github.com/fairlearn/fairlearn</a></li><li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/regression>regression</a> }</li><li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/tabular>tabular</a> }</li><li id=licence>Licence: MIT</li><li id=languages>Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li><li id=framework>Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/scikit-learn>scikit-learn</a> }</li><li id=references>References:<ul><li><a href=http://proceedings.mlr.press/v97/agarwal19d.html target=_blank>Agarwal et al. - Fair Regression: Quantitative Definitions and Reduction-based Algorithms</a></li></ul><ul><li><a href=https://arxiv.org/abs/1803.02453 target=_blank>Agarwal et al. - A Reductions Approach to Fair Classification</a></li></ul><ul><li><a href=https://papers.nips.cc/paper/2016/hash/9d2682367c3935defcb1f9e247a97c0d-Abstract.html target=_blank>Hardt et al. - Equality of Opportunity in Supervised Learning</a></li></ul></li></ul></div><hr><div><p>The documentation of <code>fairlearn</code> is excellent and provides a good introduction to the topic of fairness in AI.
-It is emphasized that fairness algorithms are no plug-and-play technical solutions, but require serious thought about the context of the data and the problem at hand.</p><blockquote><p>Fairness is a fundamentally sociotechnical challenge and cannot be solved with technical tools alone. They may be helpful for certain tasks such as assessing unfairness through various metrics, or to mitigate observed unfairness when training a model. Additionally, fairness has different definitions in different contexts and it may not be possible to represent it quantitatively at all. (<a href=https://fairlearn.org/main/quickstart.html>source</a>)</p></blockquote><p>Fairlearn contains two main components:</p><ul><li>&ldquo;<a href=https://fairlearn.org/main/user_guide/assessment.html>Metrics</a> for assessing which groups are negatively impacted by a model, and for comparing multiple models in terms of various fairness and accuracy metrics.&rdquo;</li><li>&ldquo;<a href=https://fairlearn.org/main/user_guide/mitigation.html>Algorithms</a> for mitigating unfairness in a variety of AI tasks and along a variety of fairness definitions.&rdquo;<ul><li>Not all algorithms are applicable to all machine learning tasks.</li><li>Not all algorithms support all fairness definitions</li></ul></li></ul><p><code>Fairlearn</code> contains two <em>reduction algorithms</em> that incorporate fairness constraints into a (binary) classification or regression problem by reducing the problem into a sequence of weighted classification or regression problems.
+}
+<ul>
+<li>Fairness type: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/fairness/group-fairness>group fairness</a> }</li>
+</ul>
+</li>
+<li id=categories> Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-agnostic>model-agnostic</a> } </li>
+<li id=design-phase> Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/preprocessing>preprocessing</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/post-processing>post-processing</a> }</li>
+<li id=repository> Repository: <a href=https://github.com/fairlearn/fairlearn target=_blank>https://github.com/fairlearn/fairlearn</a></li>
+<li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/regression>regression</a> }</li>
+<li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/tabular>tabular</a> }</li>
+<li id=licence> Licence: MIT</li>
+<li id=languages> Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li>
+<li id=framework> Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/scikit-learn>scikit-learn</a> }</li>
+<li id=references>References:
+<ul>
+<li><a href=http://proceedings.mlr.press/v97/agarwal19d.html target=_blank>Agarwal et al. - Fair Regression: Quantitative Definitions and Reduction-based Algorithms</a></li>
+</ul>
+<ul>
+<li><a href=https://arxiv.org/abs/1803.02453 target=_blank>Agarwal et al. - A Reductions Approach to Fair Classification</a></li>
+</ul>
+<ul>
+<li><a href=https://papers.nips.cc/paper/2016/hash/9d2682367c3935defcb1f9e247a97c0d-Abstract.html target=_blank>Hardt et al. - Equality of Opportunity in Supervised Learning</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr>
+<div>
+<p>The documentation of <code>fairlearn</code> is excellent and provides a good introduction to the topic of fairness in AI.
+It is emphasized that fairness algorithms are no plug-and-play technical solutions, but require serious thought about the context of the data and the problem at hand.</p>
+<blockquote>
+<p>Fairness is a fundamentally sociotechnical challenge and cannot be solved with technical tools alone. They may be helpful for certain tasks such as assessing unfairness through various metrics, or to mitigate observed unfairness when training a model. Additionally, fairness has different definitions in different contexts and it may not be possible to represent it quantitatively at all. (<a href=https://fairlearn.org/main/quickstart.html>source</a>)</p>
+</blockquote>
+<p>Fairlearn contains two main components:</p>
+<ul>
+<li>&ldquo;<a href=https://fairlearn.org/main/user_guide/assessment.html>Metrics</a> for assessing which groups are negatively impacted by a model, and for comparing multiple models in terms of various fairness and accuracy metrics.&rdquo;</li>
+<li>&ldquo;<a href=https://fairlearn.org/main/user_guide/mitigation.html>Algorithms</a> for mitigating unfairness in a variety of AI tasks and along a variety of fairness definitions.&rdquo;
+<ul>
+<li>Not all algorithms are applicable to all machine learning tasks.</li>
+<li>Not all algorithms support all fairness definitions</li>
+</ul>
+</li>
+</ul>
+<p><code>Fairlearn</code> contains two <em>reduction algorithms</em> that incorporate fairness constraints into a (binary) classification or regression problem by reducing the problem into a sequence of weighted classification or regression problems.
 The only requirement of the <code>fairlearn</code> implementation is that the base estimator has a <code>fit</code> and <code>predict</code> call, so for example all your typical <code>sklearn</code> estimators are compatible.
 This is applied in the
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing/>in-processing</a>
 stage.
-Note that currently multi-class classification is not supported!</p><p>An interesting difference with a typical predict function is that sometimes <em>randomized</em> predictions are used:</p><blockquote><p>Fairlearn mitigation algorithms largely follow the conventions of scikit-learn, meaning that they implement the fit method to train a model and the predict method to make predictions. However, in contrast with scikit-learn, Fairlearn algorithms can produce randomized predictors. Randomization of predictions is required to satisfy many definitions of fairness. Because of randomization, it is possible to get different outputs from the predictor’s predict method on identical data. For each of our algorithms, we provide explicit access to the probability distribution used for randomization. <a href=https://fairlearn.org/main/user_guide/mitigation.html#fairness-constraints-for-multi-class-classification>source</a></p></blockquote><p><code>Fairlearn</code> also contains a
+Note that currently multi-class classification is not supported!</p>
+<p>An interesting difference with a typical predict function is that sometimes <em>randomized</em> predictions are used:</p>
+<blockquote>
+<p>Fairlearn mitigation algorithms largely follow the conventions of scikit-learn, meaning that they implement the fit method to train a model and the predict method to make predictions. However, in contrast with scikit-learn, Fairlearn algorithms can produce randomized predictors. Randomization of predictions is required to satisfy many definitions of fairness. Because of randomization, it is possible to get different outputs from the predictor’s predict method on identical data. For each of our algorithms, we provide explicit access to the probability distribution used for randomization. <a href=https://fairlearn.org/main/user_guide/mitigation.html#fairness-constraints-for-multi-class-classification>source</a></p>
+</blockquote>
+<p><code>Fairlearn</code> also contains a
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/preprocessing/>preprocessing</a>
 algorithm to remove correlation of non-sensitive features with sensitive features.
-This addresses the potential issue that a machine learning model makes inferences based on sensitive features, even when these features are not explicitly included in the data, by instead using highly correlated features that were not considered to be sensitive on their own.</p><p><code>Fairlearn</code> also contains a
+This addresses the potential issue that a machine learning model makes inferences based on sensitive features, even when these features are not explicitly included in the data, by instead using highly correlated features that were not considered to be sensitive on their own.</p>
+<p><code>Fairlearn</code> also contains a
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/post-processing/>post-processing</a>
-algorithm that takes (possibly biased) model output and then fits a monotone transformation such that a chosen parity constraint is still satisfied.</p><p>All these methods are thus
+algorithm that takes (possibly biased) model output and then fits a monotone transformation such that a chosen parity constraint is still satisfied.</p>
+<p>All these methods are thus
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-agnostic/>model-agnostic</a>
 .
 Note that being model-agnostic does not necessarily imply that the methods are also
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/post-processing/>post-processing</a>
 , even though this generally does hold in the case of
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/explainability/>explainability</a>
-.</p><h2 id=fairness-definitions--parity-constraints>Fairness definitions / Parity constraints</h2><p>Generally speaking, the goal of the type of fairness that <code>fairlearn</code> implements is to <em>avoid harm</em>.
+.</p>
+<h2 id=fairness-definitions--parity-constraints>Fairness definitions / Parity constraints</h2>
+<p>Generally speaking, the goal of the type of fairness that <code>fairlearn</code> implements is to <em>avoid harm</em>.
 There are various ways to implement this.
-The <code>fairlearn</code> package distinguishes and implements the following <a href=https://fairlearn.org/main/user_guide/fairness_in_machine_learning.html#parity-constraints>fairness constraints</a> for <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/fairness/group-fairness>group fairness</a>:</p><h3 id=binary-classification>Binary classification:</h3><ul><li>DP - Demographic Parity: &ldquo;the percentage of samples with label 1 should be equal across all groups&rdquo;<ul><li>Note that this concerns the <em>predicted</em> label, not the true label.</li></ul></li><li>TPRP - True positive rate parity: sensitive features should not affect the true positive rate</li><li>FPRP - False positive rate parity: sensitive features should not affect the false positive rate</li><li>EO - Equalized odds: &ldquo;satisfies both <em>true positive rate parity</em> and <em>false positive rate parity</em>&rdquo;</li><li>ERP - Error Rate Parity: &ldquo;error rates should be the same across all groups&rdquo;, which again is another way of saying that sensitive features should not affect error rates</li></ul><p><code>Fairlearn</code> includes various possible relaxations for these constraints, as exact parity is often unrealistic.</p><h3 id=regression>Regression:</h3><ul><li>BGL - Bounded Group Loss: the expected (regression) loss of each group must be below a chosen threshold</li></ul></div></article></main><footer><p>Last modified on 13-07-2021.</p><p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p></footer></body></html>
+The <code>fairlearn</code> package distinguishes and implements the following <a href=https://fairlearn.org/main/user_guide/fairness_in_machine_learning.html#parity-constraints>fairness constraints</a> for <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/fairness/group-fairness>group fairness</a>:</p>
+<h3 id=binary-classification>Binary classification:</h3>
+<ul>
+<li>DP - Demographic Parity: &ldquo;the percentage of samples with label 1 should be equal across all groups&rdquo;
+<ul>
+<li>Note that this concerns the <em>predicted</em> label, not the true label.</li>
+</ul>
+</li>
+<li>TPRP - True positive rate parity: sensitive features should not affect the true positive rate</li>
+<li>FPRP - False positive rate parity: sensitive features should not affect the false positive rate</li>
+<li>EO - Equalized odds: &ldquo;satisfies both <em>true positive rate parity</em> and <em>false positive rate parity</em>&rdquo;</li>
+<li>ERP - Error Rate Parity: &ldquo;error rates should be the same across all groups&rdquo;, which again is another way of saying that sensitive features should not affect error rates</li>
+</ul>
+<p><code>Fairlearn</code> includes various possible relaxations for these constraints, as exact parity is often unrealistic.</p>
+<h3 id=regression>Regression:</h3>
+<ul>
+<li>BGL - Bounded Group Loss: the expected (regression) loss of each group must be below a chosen threshold</li>
+</ul>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 13-07-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

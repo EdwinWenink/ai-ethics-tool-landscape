@@ -1,24 +1,93 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><link rel="shortcut icon" href=img/favicon.ico><title>Shapley value explanations</title><link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css><link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/shapley-value/index.xml title="Ethical AI Tool Landscape"></head><body><header><div class=inline-block><a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a></div><nav><div id=breadcrumbs><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>Shapley value explanations</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+<link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/shapley-value/index.xml title="Ethical AI Tool Landscape">
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations>Explanations</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/shapley-value/>Shapley value</a>
-| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a></div></nav></header><main><div><h1 class=title>Shapley value explanations</h1><div><p>Methods using Shapley values are very influential and use a particular form of
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<div>
+<h1 class=title>Shapley value explanations</h1>
+<div><p>Methods using Shapley values are very influential and use a particular form of
 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/perturbation/>perturbation</a>
 to explain the importance of features for predictions.
 The importance of a feature for a prediction is measured in terms of how much this feature &ldquo;pushes&rdquo; the prediction away from <em>a relevant baseline value</em>, such as an average over a reference set.
 Different methods use different forms of perturbation.
 One could for example look at the difference in model output between 1) when a feature is present and 2) when a feature is occluded, repeat this for all subsets of features, and then compute the average difference per feature.
-Often it is not possible to compute the exact Shapley value due to the combinatorial explosion of subsets, so in practice packages implement smart approximations to Shapley values.</p></div></div><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi/>Alibi</a></h1><div>Alibi is an open-source Python library that supports various interpretability techniques and a broad array of explanation types. The README already provides an overview of the supported methods and when they are applicable. The following table with supported methods is copied from the README (slightly abbreviated):
+Often it is not possible to compute the exact Shapley value due to the combinatorial explosion of subsets, so in practice packages implement smart approximations to Shapley values.</p>
+</div>
+</div>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi/>Alibi</a></h1>
+<div>
+Alibi is an open-source Python library that supports various interpretability techniques and a broad array of explanation types. The README already provides an overview of the supported methods and when they are applicable. The following table with supported methods is copied from the README (slightly abbreviated):
 Supported methods Method Models Explanations Classification Regression Tabular Text Images Categorical features ALE BB global ✔ ✔ ✔ Anchors BB local ✔ ✔ ✔ ✔ ✔ CEM BB* TF/Keras local ✔ ✔ ✔ Counterfactuals BB* TF/Keras local ✔ ✔ ✔ Prototype Counterfactuals BB* TF/Keras local ✔ ✔ ✔ ✔ Integrated Gradients TF/Keras local ✔ ✔ ✔ ✔ ✔ ✔ Kernel SHAP BB local global ✔ ✔ ✔ ✔ Tree SHAP WB local global ✔ ✔ ✔ ✔ The README also explains the keys:
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/captum/>Captum</a></h1><div>Captum is a model interpretability library specifically PyTorch. It is actively maintained at the moment of writing and supports an extensive array of interpretability methods.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/captum/>Captum</a></h1>
+<div>
+Captum is a model interpretability library specifically PyTorch. It is actively maintained at the moment of writing and supports an extensive array of interpretability methods.
 The Captum website also offers a large range of hands-on tutorials for various use cases.
 Supported interpretability methods Captum supports a very extensive list of interpretability algorithms. All paper references for each of the supported methods are listed in the README, so they will not be repeated here.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/captum/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/deepexplain/>DeepExplain</a></h1><div>The DeepExplain Python package for TensorFlow models and Keras models with TensorFlow backend offers two types of interpretability methods for deep convolutional neural networks: gradient-based methods and perturbation-based methods. This package does not seem to be very actively maintained anymore and support for TensorFlow V2 is limited.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/captum/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/deepexplain/>DeepExplain</a></h1>
+<div>
+The DeepExplain Python package for TensorFlow models and Keras models with TensorFlow backend offers two types of interpretability methods for deep convolutional neural networks: gradient-based methods and perturbation-based methods. This package does not seem to be very actively maintained anymore and support for TensorFlow V2 is limited.
 Attributions The README gives the following clear and succinct explanation of what an &ldquo;attribution&rdquo; is. All methods included in this approach allow visualization of how each input feature contributes to the final prediction, in terms of what a particular targeted neuron &ldquo;sees&rdquo;:
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/deepexplain/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/h2o-mli-resources/>H2O MLI Resources</a></h1><div>This repository by H2O.ai contains useful resources and notebooks that showcase well-known machine learning interpretability techniques. The examples use the h2o Python package with their own estimators (e.g. their own fork of XGBoost), but all code is open-source and the examples are still illustrative of the interpretability techniques. These case studies that also deal with practical coding issues and preprocessing steps, e.g. that LIME can be unstable when there are strong correlations between input variables.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/h2o-mli-resources/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/interpretml/>InterpretML</a></h1><div>The InterpretML toolkit, developed at Microsoft, can be decomposed in two major components:
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/deepexplain/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/h2o-mli-resources/>H2O MLI Resources</a></h1>
+<div>
+This repository by H2O.ai contains useful resources and notebooks that showcase well-known machine learning interpretability techniques. The examples use the h2o Python package with their own estimators (e.g. their own fork of XGBoost), but all code is open-source and the examples are still illustrative of the interpretability techniques. These case studies that also deal with practical coding issues and preprocessing steps, e.g. that LIME can be unstable when there are strong correlations between input variables.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/h2o-mli-resources/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/interpretml/>InterpretML</a></h1>
+<div>
+The InterpretML toolkit, developed at Microsoft, can be decomposed in two major components:
 A set of interpretable &ldquo;glassbox&rdquo; models Techniques for explaining black box systems. W.r.t. 1, InterpretML particularly contains a new interpretable &ldquo;glassbox&rdquo; model that combines Generalized Additive Models (GAMs) with machine learning techniques such as gradient boosted trees, called an Explainable Boosting Machine.
 Other than this new interpretable model, the main utility of InterpretML is to unify existing explainability techniques under a single API.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/interpretml/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>SHAP: SHapley Additive exPlanations</a></h1><div>The SHAP package is built on the concept of a Shapley value and can generate explanations model-agnostically. So it only requires input and output values, not model internals:
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/interpretml/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>SHAP: SHapley Additive exPlanations</a></h1>
+<div>
+The SHAP package is built on the concept of a Shapley value and can generate explanations model-agnostically. So it only requires input and output values, not model internals:
 SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions. (README)
 Additionally, this package also contains several model-specific implementations of Shapley values that are optimized for a particular machine learning model and sometimes even for a particular library.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>Read more...</a></div></article></main><footer><p>Last modified on 30-06-2021.</p><p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p></footer></body></html>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>Read more...</a>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 30-06-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

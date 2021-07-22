@@ -1,14 +1,85 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><link rel="shortcut icon" href=img/favicon.ico><title>PyTorch</title><link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css><link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/pytorch/index.xml title="Ethical AI Tool Landscape"></head><body><header><div class=inline-block><a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a></div><nav><div id=breadcrumbs><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>PyTorch</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+<link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/pytorch/index.xml title="Ethical AI Tool Landscape">
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks>Frameworks</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/pytorch/>Pytorch</a>
-| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a></div></nav></header><main><div><h1 class=title>PyTorch</h1></div><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi-detect/>Alibi Detect</a></h1><div>Alibi Detect is an open source Python library (sister library to Alibi ) focused detecting outliers, adversial examples, and concept drift.
-Finding adversial examples is relevant for assessing the security of machine learning models. Machine learning models learn complex statistical patterns in datasets. If these statistical patterns &ldquo;drift&rdquo; (in unforeseen ways) after a model is deployed, this will decrease the model performance over time. In systems where model predictions have an impact on people, this may be a threat to the fairness of the predictions.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi-detect/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/captum/>Captum</a></h1><div>Captum is a model interpretability library specifically PyTorch. It is actively maintained at the moment of writing and supports an extensive array of interpretability methods.
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<div>
+<h1 class=title>PyTorch</h1>
+</div>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/advbox/>AdvBox</a></h1>
+<div>
+Advbox offers a number of AI model security toolkits. AdversialBox allows zero-coding generation of adversial examples for a wide range of neural network frameworks. An overview of the supported attacks and defenses can be found here and the corresponding code here. It requires some effort to find all attacks mentioned on the homepage in the code base.
+Generally speaking, the documentation of AdvBox is incomplete and not very user-friendly. ODD: Object Detector Deception showcases a specific attack for object detection networks such as YOLO, but is not mentioned in the README.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/advbox/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi-detect/>Alibi Detect</a></h1>
+<div>
+Alibi Detect is an open source Python library (sister library to Alibi ) focused detecting outliers, adversarial examples, and concept drift.
+Finding adversarial examples is relevant for assessing the security of machine learning models. Machine learning models learn complex statistical patterns in datasets. If these statistical patterns &ldquo;drift&rdquo; (in unforeseen ways) after a model is deployed, this will decrease the model performance over time. In systems where model predictions have an impact on people, this may be a threat to the fairness of the predictions.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/alibi-detect/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/captum/>Captum</a></h1>
+<div>
+Captum is a model interpretability library specifically PyTorch. It is actively maintained at the moment of writing and supports an extensive array of interpretability methods.
 The Captum website also offers a large range of hands-on tutorials for various use cases.
 Supported interpretability methods Captum supports a very extensive list of interpretability algorithms. All paper references for each of the supported methods are listed in the README, so they will not be repeated here.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/captum/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/openmined/>OpenMined (PySyft)</a></h1><div>The OpenMined community is a collaboration of several organizations, including TensorFlow, PyTorch and Keras, to create an open-source ecosystem of privacy tools that extend libraries such as PyTorch with cryptographic techniques and differential privacy. The aim is to contribute to the adaptation of privacy-preserving AI.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/captum/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/foolbox/>Foolbox</a></h1>
+<div>
+Foolbox is a comprehensive adversarial library for attacking machine learning models, with a focus on neural networks in computer vision. At the moment of writing FoolBox contains 41 gradient-based and decision-based adversarial attacks, making it the second biggest adversial library after ART . A notable difference with ART is that Foolbox only contains attacks, but no defenses and evaluation metrics.
+The library is very user-friendly, with a clear API and documentation.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/foolbox/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/openmined/>OpenMined (PySyft)</a></h1>
+<div>
+The OpenMined community is a collaboration of several organizations, including TensorFlow, PyTorch and Keras, to create an open-source ecosystem of privacy tools that extend libraries such as PyTorch with cryptographic techniques and differential privacy. The aim is to contribute to the adaptation of privacy-preserving AI.
 To this end, OpenMined offers several privacy-preserving tools on their github. A main tool is PySyft, which allows &ldquo;computing on data you do not own and cannot see&rdquo;.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/openmined/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>SHAP: SHapley Additive exPlanations</a></h1><div>The SHAP package is built on the concept of a Shapley value and can generate explanations model-agnostically. So it only requires input and output values, not model internals:
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/openmined/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>SHAP: SHapley Additive exPlanations</a></h1>
+<div>
+The SHAP package is built on the concept of a Shapley value and can generate explanations model-agnostically. So it only requires input and output values, not model internals:
 SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions. (README)
 Additionally, this package also contains several model-specific implementations of Shapley values that are optimized for a particular machine learning model and sometimes even for a particular library.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>Read more...</a></div></article></main><footer><p>Last modified on 13-07-2021.</p><p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p></footer></body></html>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>Read more...</a>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 22-07-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

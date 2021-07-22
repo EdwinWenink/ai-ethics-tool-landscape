@@ -1,9 +1,60 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><link rel="shortcut icon" href=img/favicon.ico><title>Perturbation</title><link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css><link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/perturbation/index.xml title="Ethical AI Tool Landscape"></head><body><header><div class=inline-block><a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a></div><nav><div id=breadcrumbs><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>Perturbation</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+<link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/perturbation/index.xml title="Ethical AI Tool Landscape">
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations>Explanations</a>
 > <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/perturbation/>Perturbation</a>
-| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a></div></nav></header><main><div><h1 class=title>Perturbation</h1><div><p>Explainability methods based on permutation explain the importance of a feature for a particular prediction by perturbating the feature and then investigating how this change affects the outcome.</p></div></div><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/deepexplain/>DeepExplain</a></h1><div>The DeepExplain Python package for TensorFlow models and Keras models with TensorFlow backend offers two types of interpretability methods for deep convolutional neural networks: gradient-based methods and perturbation-based methods. This package does not seem to be very actively maintained anymore and support for TensorFlow V2 is limited.
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<div>
+<h1 class=title>Perturbation</h1>
+<div><p>Explainability methods based on permutation explain the importance of a feature for a particular prediction by perturbating the feature and then investigating how this change affects the outcome.</p>
+</div>
+</div>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/deepexplain/>DeepExplain</a></h1>
+<div>
+The DeepExplain Python package for TensorFlow models and Keras models with TensorFlow backend offers two types of interpretability methods for deep convolutional neural networks: gradient-based methods and perturbation-based methods. This package does not seem to be very actively maintained anymore and support for TensorFlow V2 is limited.
 Attributions The README gives the following clear and succinct explanation of what an &ldquo;attribution&rdquo; is. All methods included in this approach allow visualization of how each input feature contributes to the final prediction, in terms of what a particular targeted neuron &ldquo;sees&rdquo;:
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/deepexplain/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/eli5/>ELI5</a></h1><div>ELI5 provides model-specific support for models from scikit-learn, lightning, decision tree ensembles using the xgboost, LightGBM, CatBoost libraries. ELI5 mainly provides convenient wrappers to couple the feature importance coefficients that these libraries already provide with feature names, as well as convenient ways to visualize importances, e.g. by highlighting words in a text. For Keras image classifiers an implementation of the gradient-based Grad-CAM visualizations is offered, but the TensorFlow V2 backend is not supported.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/eli5/>Read more...</a></div></article><article><h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/xai-toolbox/>XAI Toolbox</a></h1><div>This library is a small toolbox that offers some convenience functions for quickly visualizing imbalances in the data set, computing (permutation) feature importances and metrics such as the ROC-curve. A function to balance the data is offered through basic up- or downsampling, but other than this no fairness criteria are defined.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/deepexplain/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/eli5/>ELI5</a></h1>
+<div>
+ELI5 provides model-specific support for models from scikit-learn, lightning, decision tree ensembles using the xgboost, LightGBM, CatBoost libraries. ELI5 mainly provides convenient wrappers to couple the feature importance coefficients that these libraries already provide with feature names, as well as convenient ways to visualize importances, e.g. by highlighting words in a text. For Keras image classifiers an implementation of the gradient-based Grad-CAM visualizations is offered, but the TensorFlow V2 backend is not supported.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/eli5/>Read more...</a>
+</div>
+</article>
+<article>
+<h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/xai-toolbox/>XAI Toolbox</a></h1>
+<div>
+This library is a small toolbox that offers some convenience functions for quickly visualizing imbalances in the data set, computing (permutation) feature importances and metrics such as the ROC-curve. A function to balance the data is offered through basic up- or downsampling, but other than this no fairness criteria are defined.
 Compared to other libraries the XAI Toolbox is very basic and currently the roadmap (which is not updated since 2019) does not include any major improvements.
-<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/xai-toolbox/>Read more...</a></div></article></main><footer><p>Last modified on 30-06-2021.</p><p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p></footer></body></html>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/xai-toolbox/>Read more...</a>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 30-06-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

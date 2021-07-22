@@ -1,0 +1,67 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>Foolbox</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools>Tools</a>
+> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/foolbox/>Foolbox</a>
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<article>
+<h1 class=title>Foolbox</h1>
+<div>
+<ul>
+<li id=values> Values: {
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/security>security</a>
+}
+</li>
+<li id=categories> Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-specific>model-specific</a> } </li>
+<li id=design-phase> Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/post-processing>post-processing</a> }</li>
+<li id=repository> Repository: <a href=https://github.com/bethgelab/foolbox target=_blank>https://github.com/bethgelab/foolbox</a></li>
+<li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> }</li>
+<li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/image>image</a> }</li>
+<li id=licence> Licence: MIT</li>
+<li id=languages> Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li>
+<li id=framework> Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/pytorch>PyTorch</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/tensorflow>TensorFlow</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/jax>JAX</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/numpy>numpy</a> }</li>
+</ul>
+</div>
+<hr>
+<div>
+<p><code>Foolbox</code> is a comprehensive adversarial library for attacking machine learning models, with a focus on neural networks in computer vision.
+At the moment of writing FoolBox contains 41 gradient-based and decision-based <a href=https://foolbox.readthedocs.io/en/stable/modules/attacks.html>adversarial attacks</a>, making it the second biggest adversial library after
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/art/>ART</a>
+.
+A notable difference with ART is that Foolbox only contains attacks, but no defenses and evaluation metrics.</p>
+<p>The library is very user-friendly, with a clear API and documentation.
+Foolbox has dedicated classes to wrap around <code>PyTorch</code>, <code>TensorFlow</code> and <code>JAX</code> models, e.g. <code>fb.PyTorchModel(model, bounds=bounds, preprocessing=preprocessing)</code> where <code>model</code> is a <code>PyTorch</code> model.
+The <code>FoolBox</code> model can then be passed into an attack of choice.
+This clear API makes it possible to easily experiment with many adversarial attacks.</p>
+<p>Have a look at the well-written <a href=https://foolbox.jonasrauber.de/guide/>guide</a>.
+For practical examples, have a look at the <a href=https://github.com/jonasrauber/foolbox-native-tutorial/blob/master/foolbox-native-tutorial.ipynb>tutorial notebook</a> as well as the <a href=https://github.com/bethgelab/foolbox/tree/master/examples>example scripts</a> listed on Github.</p>
+<p>Implementation-wise <code>Foolbox</code> is built on <a href=https://eagerpy.jonasrauber.de/><code>EagerPy</code></a> which allows Python code to run natively in the supported frameworks, e.g. in PyTorch.
+I take this to mean that Foolbox will not support libraries unless they are supported by <code>EagerPy</code> as well.
+Foolbox also comes with extensive type annotations, i.e. the library is up to speed with the latest Python 3 conventions.</p>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 22-07-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>
