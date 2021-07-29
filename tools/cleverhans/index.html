@@ -1,0 +1,63 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>CleverHans</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools>Tools</a>
+> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/cleverhans/>Cleverhans</a>
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<article>
+<h1 class=title>CleverHans</h1>
+<div>
+<ul>
+<li id=values> Values: {
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/security>security</a>
+}
+</li>
+<li id=categories> Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-specific>model-specific</a> } </li>
+<li id=design-phase> Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/post-processing>post-processing</a> }</li>
+<li id=repository> Repository: <a href=https://github.com/cleverhans-lab/cleverhans target=_blank>https://github.com/cleverhans-lab/cleverhans</a></li>
+<li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> }</li>
+<li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/image>image</a> }</li>
+<li id=licence> Licence: MIT</li>
+<li id=languages> Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li>
+<li id=framework> Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/jax>JAX</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/pytorch>PyTorch</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/tensorflow>TensorFlow</a> }</li>
+</ul>
+</div>
+<hr>
+<div>
+<p><code>CleverHans</code> is a Python library with the main purpose of providing good reference implementations of attacks for benchmarking machine learning models against adversarial examples.
+The main maintainers of this library are Ian Goodfellow and Nicolas Papernot.
+Attacks (i.e. methods for generating adversarial examples) are listed under <a href=https://github.com/cleverhans-lab/cleverhans/tree/master/cleverhans><code>/cleverhans</code></a> and each of the supported frameworks has its own folder with attack implementations.
+<code>CleverHans</code> also aims to implement a set of defenses, but this is currently work in progress (currently there is only a defense implementation for <code>PyTorch</code>).</p>
+<p>In the latest version of <code>CleverHans</code>, both <code>TensorFlow 1</code> and <code>Python 2</code> are no longer supported.
+To me it seems that not all content from <code>v3.1.0</code> is ported yet to the latest version of <code>CleverHans (v4.0.0)</code>, which for example may explain the mostly empty <code>/defenses</code> folder.
+However, <code>v4.0.0</code> was only released 5 days prior to the writing of this text.
+According to the README the current focus is on implementing attacks in <code>PyTorch</code>.</p>
+<p>The supported frameworks in v4 are <code>JAX</code>, <code>PyTorch</code> and <code>TensorFlow 2</code> (legacy implementations for <code>TensorFlow 1</code> and <code>Python 2</code> are still available under <code>cleverhans_v3.1.0</code>).</p>
+<p>Tutorials on <code>Cifar10</code> and <code>MNIST</code> are available alongside a wide array of example use-cases of the library.</p>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 29-07-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>
