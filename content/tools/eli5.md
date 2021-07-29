@@ -12,7 +12,7 @@ languages: ['Python']
 frameworks: ['scikit-learn', 'lightning', 'XGBoost', 'LightGBM', 'CatBoost']
 ---
 
-ELI5 provides model-specific support for models from `scikit-learn`, `lightning`, decision tree ensembles using the `xgboost`, `LightGBM`, `CatBoost` libraries.
+ELI5 ("Explain Like I'm 5") provides model-specific support for models from `scikit-learn`, `lightning`, decision tree ensembles using the `xgboost`, `LightGBM`, `CatBoost` libraries.
 ELI5 mainly provides convenient wrappers to couple the feature importance coefficients that these libraries already provide with feature names, as well as convenient ways to visualize importances, e.g. by highlighting words in a text.
 For Keras image classifiers an implementation of the gradient-based Grad-CAM visualizations is offered, but the TensorFlow V2 backend is not supported.
 

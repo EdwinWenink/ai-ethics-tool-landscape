@@ -1,5 +1,5 @@
 ---
-title: IBM AI Fairness 360
+title: AI Fairness 360
 values: ['fairness']
 fairness: ['group fairness', 'individual fairness']
 categories: ['model-agnostic']
