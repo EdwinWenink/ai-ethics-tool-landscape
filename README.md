@@ -65,3 +65,5 @@ Collaboration is invited through the addition of tools, refining of existing ent
 You can also refine descriptions of any of the taxonomy terms, for example the description of an [explanation type](https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/).
 The concepts by which to categorize tools are up for discussion and some decisions were made to keep things simple enough.
 However, if you have constructive suggestions, for example to adapt existing entry fields or maybe introduce a new one, feel free to open an issue.
+
+If you want to contribute but do not know where to begin, have a look at the list of [candidates](./candidates.md).

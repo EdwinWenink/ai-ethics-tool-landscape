@@ -26,7 +26,6 @@ If you want to collaborate this is a good place to start.
 ## Explainability
 
 - [Deep Visualization Toolbox](https://github.com/yosinski/deep-visualization-toolbox)
-- [AI Explainability 360](https://github.com/Trusted-AI/AIX360)
 - [iNNvestigate](https://github.com/albermax/innvestigate)
 - [Keras-vis](https://github.com/raghakot/keras-vis)
 - [DALEX](https://github.com/ModelOriented/DALEX)
