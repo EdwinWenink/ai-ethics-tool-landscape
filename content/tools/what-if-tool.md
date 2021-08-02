@@ -1,7 +1,7 @@
 ---
 title: 'What-If Tool'
 values: ['fairness' , 'explainability']
-explanations: ['Shapley', 'gradient-based', 'counterfactual', 'partial dependence plot']
+explanations: ['Shapley value', 'gradient-based', 'counterfactual', 'partial dependence plot']
 fairness: ['individual fairness', 'group fairness']
 categories: ['model-agnostic']
 tasks: ['classification', 'regression']

@@ -1,4 +1,4 @@
-# Candidate
+# Candidates
 
 These are a list of candidates for future inclusion.
 If you want to collaborate this is a good place to start.
@@ -29,7 +29,7 @@ If you want to collaborate this is a good place to start.
 - [AI Explainability 360](https://github.com/Trusted-AI/AIX360)
 - [iNNvestigate](https://github.com/albermax/innvestigate)
 - [Keras-vis](https://github.com/raghakot/keras-vis)
-- [DALEX]
+- [DALEX](https://github.com/ModelOriented/DALEX)
 - [Shapash](https://github.com/MAIF/shapash)
 - [TensorFlow Lucid](https://github.com/tensorflow/lucid)
 
