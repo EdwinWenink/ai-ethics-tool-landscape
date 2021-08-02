@@ -26,7 +26,11 @@
 <div>
 <h1 class=title>Anchor</h1>
 <div><p>An &ldquo;anchor&rdquo; is a subset of features and their value ranges for which the model will almost always output the same prediction.
-The anchor should be as small as possible, also to promote interpretability.</p>
+Another way of saying this is that if the feature values of an anchor are satisfied, other features will very likely not affect the prediction, i.e. the prediction is &ldquo;anchored&rdquo;.
+Anchors are by design interpretable, because they clearly indicate for which feature values they apply.
+Such an anchor can be expressed as an <em>if-then</em> rule, but only in a specific feature range.
+That is why Molnar calls them <a href=https://christophm.github.io/interpretable-ml-book/anchors.html>scoped rules</a>.
+Algorithms for computing anchors are model-agnostic.</p>
 </div>
 </div>
 <article>
@@ -39,7 +43,7 @@ Supported methods Method Models Explanations Classification Regression Tabular T
 </article>
 </main>
 <footer>
-<p>Last modified on 30-06-2021.</p>
+<p>Last modified on 02-08-2021.</p>
 <p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
 </footer>
 </body>

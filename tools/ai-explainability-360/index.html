@@ -1,0 +1,100 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<link rel="shortcut icon" href=img/favicon.ico>
+<title>AI Explainability 360</title>
+<link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
+</head>
+<body>
+<header>
+<div class=inline-block>
+<a href=https://github.com/EdwinWenink/ai-ethics-tool-landscape target=_blank><img src=https://edwinwenink.github.io/ai-ethics-tool-landscape/img/GitHub-Mark/PNG/GitHub-Mark-32px.png alt="Github page" class=inline-logo></a>
+</div>
+<nav>
+<div id=breadcrumbs>
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Home</a>
+> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools>Tools</a>
+> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/ai-explainability-360/>Ai explainability 360</a>
+| <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape//taxonomy>Taxonomy</a>
+</div>
+</nav>
+</header>
+<main>
+<article>
+<h1 class=title>AI Explainability 360</h1>
+<div>
+<ul>
+<li id=values> Values: {
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/values/explainability>explainability</a>
+}
+<ul>
+<li>Explanation type: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/local-surrogate>local surrogate</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/global-surrogate>global surrogate</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/example-based>example-based</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/shapley-value>Shapley value</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/contrastive>contrastive</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/white-box>white box</a> }</li>
+</ul>
+</li>
+<li id=categories> Categories: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/categories/model-agnostic>model-agnostic</a> } </li>
+<li id=design-phase> Stage: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/preprocessing>preprocessing</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/in-processing>in-processing</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/stages/post-processing>post-processing</a> }</li>
+<li id=repository> Repository: <a href=https://github.com/Trusted-AI/AIX360 target=_blank>https://github.com/Trusted-AI/AIX360</a></li>
+<li id=model>Tasks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/classification>classification</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tasks/regression>regression</a> }</li>
+<li id=model>Input data: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/tabular>tabular</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/image>image</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/data/text>text</a> }</li>
+<li id=licence> Licence: Apache License 2.0</li>
+<li id=languages> Languages: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/languages/python>Python</a> }</li>
+<li id=framework> Frameworks: { <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/tensorflow>TensorFlow</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/pytorch>PyTorch</a> <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/frameworks/scikit-learn>scikit-learn</a> }</li>
+<li id=references>References:
+<ul>
+<li><a href=https://arxiv.org/abs/1909.03012 target=_blank>Arya et al. - One Explanation Does Not Fit All: A Toolkit and Taxonomy of AI Explainability Techniques</a></li>
+</ul>
+<ul>
+<li><a href=https://aix360.mybluemix.net/ target=_blank>AI Explainability 360 Homepage</a></li>
+</ul>
+<ul>
+<li><a href=http://aix360.mybluemix.net/data target=_blank>Interactive tutorial with different explanations for different audiences</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr>
+<div>
+<p>The AI Explainability 360 (AIX360) toolkit is a Python library that offers a wide range of explanation types as well as some explainability metrics.
+AIX360 offers excellent <a href=http://aix360.mybluemix.net/resources#guidance>guidance material</a>, an <a href=http://aix360.mybluemix.net/data>interactive demo</a> as well as <a href=http://aix360.mybluemix.net/resources#tutorials>developer tutorials</a>.
+What&rsquo;s particularly good about this material is that it stimulates reflection on which type of explanation is appropriate, not only from a technical point of view, but also with respect to the target explainer and explainee.</p>
+<p>This library supports the <em>faithfulness</em> metric, which tracks whether features that are important according to an explanation method correlate with improved model performance, and <em>monotonicity</em>, which tracks that important features indeed increase model performance.</p>
+<p><code>TensorFlow</code>, <code>PyTorch</code> and <code>scikit-learn</code> are supported.</p>
+<h2 id=supported-algorithms>Supported Algorithms</h2>
+<p>This library distinguishes two broad categories of explanations: explanations of the dataset and of the model.
+The <a href=https://github.com/Trusted-AI/AIX360/blob/master/aix360/algorithms/README.md>guidance chart for AI Explainability 360 algorithms</a> offers a decision tree for selecting an appropriate algorithm.</p>
+<p>For explaining the dataset two methods are supported. <code>ProtoDash</code> finds example instances that are prototypical for the dataset.
+<code>DIPVAE</code> is a variational autoencoder that learns meaningful latent structures of the dataset.</p>
+<p>All other methods are for explaining models and decisions based on model outputs.
+Several local (post-hoc) explanations are supported, such as
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/shap/>SHAP</a>
+,
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/lime/>LIME</a>
+, contrastive explanation method (
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/cem/>CEM</a>
+), as well as the
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/example-based/>example-based</a>
+method <code>ProtoDash</code>.
+Notice that <code>ProtoDash</code> can both be used to represent the dataset in terms of prototypes, as well as for explaining a prediction by providing similar examples with the same outcome decision.
+This category includes
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/local-surrogate/>local surrogate</a>
+models.</p>
+<p><code>ProfWeight</code> is a method to train a
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/global-surrogate/>global surrogate</a>
+model instead.</p>
+<p>Three methods offer what AIX360 calls <em>direct</em> explanations.
+In the taxonomy of this project, this is called a
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/white-box/>white box</a>
+explanation.
+<em>Boolean Decision Rules via Column Generation</em> (BRCG) and <em>Generalized Linear Rule Models</em> (GLRM) offer a <em>global</em> model explanation by generating easy to understand rules for the model outputs.
+A method called <em>Teaching Explanations for Decisions</em> (TED) outputs explanations directly alongside predictions, so this is a <em>local</em> direct explanation.</p>
+</div>
+</article>
+</main>
+<footer>
+<p>Last modified on 02-08-2021.</p>
+<p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
+</footer>
+</body>
+</html>

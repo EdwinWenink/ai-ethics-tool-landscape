@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <link rel="shortcut icon" href=img/favicon.ico>
-<title>partial dependence plot</title>
+<title>Partial dependence plot (PDP)</title>
 <link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
 <link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/partial-dependence-plot/index.xml title="Ethical AI Tool Landscape">
 </head>
@@ -24,7 +24,21 @@
 </header>
 <main>
 <div>
-<h1 class=title>partial dependence plot</h1>
+<h1 class=title>Partial dependence plot (PDP)</h1>
+<div><p>A partial dependence plot (PDP) visualizes the marginal effect of a feature on the outcome of a machine learning model.
+This effect is computed by &ldquo;marginalizing out&rdquo; the contribution of all other features, so that the result is a function that only depends on the feature of interest.
+Contributions by other features are factored into the marginal effect.
+The PDP is then produced by plotting the predicted outcome (y-axis) against the values of the feature of interest (x-axis).
+You can compute the marginal effect of more features, but when using more than two features you will not be able to visualize the result.</p>
+<p>The computed effect is only accurate if the feature of interest does not correlate with the other features.
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/ale/>ALE</a>
+alleviates this issue because ALE plots work with a conditional a distribution instead of a marginal distribution.</p>
+<p>A PDP is the average of the lines in an
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/ice-plot/>ICE plot</a>
+.</p>
+<p>Examples such as the following can be found in Christoph Molnar&rsquo;s <a href=https://christophm.github.io/interpretable-ml-book/pdp.html>chapter on PDP</a>:</p>
+<p><img src=https://christophm.github.io/interpretable-ml-book/images/pdp-bike-1.png alt="PDP example"></p>
+</div>
 </div>
 <article>
 <h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/h2o-mli-resources/>H2O MLI Resources</a></h1>
@@ -61,7 +75,7 @@ Many convenient functions for gaining insight in the data set are provided, such
 </article>
 </main>
 <footer>
-<p>Last modified on 16-07-2021.</p>
+<p>Last modified on 02-08-2021.</p>
 <p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
 </footer>
 </body>

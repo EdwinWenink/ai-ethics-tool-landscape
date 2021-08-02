@@ -4,7 +4,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <link rel="shortcut icon" href=img/favicon.ico>
-<title>ICE plot</title>
+<title>Individual Conditional Expectation (ICE)</title>
 <link rel=stylesheet href=https://edwinwenink.github.io/ai-ethics-tool-landscape/css/style.css>
 <link rel=alternate type=application/rss+xml href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/ice-plot/index.xml title="Ethical AI Tool Landscape">
 </head>
@@ -24,7 +24,16 @@
 </header>
 <main>
 <div>
-<h1 class=title>ICE plot</h1>
+<h1 class=title>Individual Conditional Expectation (ICE)</h1>
+<div><p>An ICE plot can be seen as a
+<a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/explanations/partial-dependence-plot/>partial dependence plot</a>
+(PDP) that does not use the overal expectation of other features than the feature of interest, but instead the feature values of a single data point only.
+So the reasoning behind an ICE plot is similar to a PDP, but the main difference is that whereas a PDP uses a &ldquo;global&rdquo; expectation over the other data points, the ICE plot contains a single line for each data instance.
+Each line is computed by taking a data instance and varying only a feature of interest while keeping the other features the same, and then plotting the result on the predicted value for that instance.</p>
+<p>An advantage of this approach over the PDP is that whereas a PDP is not accurate when there are (strong) correlations between features, an ICE plot will allow you to visualize and spot these correlations.</p>
+<p>The following figure shows an ICE plot from Molnar&rsquo;s <a href=https://christophm.github.io/interpretable-ml-book/ice.html>Interpretable Machine Learning</a> book:</p>
+<p><img src=https://christophm.github.io/interpretable-ml-book/images/ice-cervical-1.png alt="ICE plot example"></p>
+</div>
 </div>
 <article>
 <h1><a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/tools/h2o-mli-resources/>H2O MLI Resources</a></h1>
@@ -35,7 +44,7 @@ This repository by H2O.ai contains useful resources and notebooks that showcase 
 </article>
 </main>
 <footer>
-<p>Last modified on 13-07-2021.</p>
+<p>Last modified on 02-08-2021.</p>
 <p>&copy; 2021 <a href=https://edwinwenink.github.io/ai-ethics-tool-landscape/>Ethical AI Tool Landscape</a> curated by <a href=https://www.edwinwenink.xyz>Edwin Wenink</a></p>
 </footer>
 </body>
